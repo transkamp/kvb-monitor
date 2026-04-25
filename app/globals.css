@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Hintergrund */
+  --background: #FAFAFA;
+  --surface: #FFFFFF;
+  
+  /* Text - Hauptfarben mit WCAG AA Kontrast */
+  --primary: #1A1A1A;        /* Kontrast 19:1 gegen weiß */
+  --secondary: #4B5563;    /* gray-600 - Kontrast 7.5:1 gegen weiß (war 6B7280) */
+  
+  /* Akzentfarben */
+  --accent: #1D4ED8;        /* blue-700 - dunkler für WCAG AA (war 2563EB) */
+  --accent-light: #3B82F6;  /* blue-500 */
+  
+  /* Live/Status-Farben */
+  --success: #15803D;      /* green-700 - dunkler für Kontrast */
+  --warning: #C2410C;       /* red-700 - dunkler für Kontrast (war red-500) */
+  
+  /* Border */
+  --border: #D1D5DB;       /* gray-300 - besser sichtbar (war E5E7EB) */
+  --border-strong: #9CA3AF; /* gray-400 */
+
+  /* Surface variants */
+  --surface-hover: #F3F4F6;  /* gray-100 - hover backgrounds */
+  --surface-muted: #F9FAFB;  /* gray-50  - footer / disclaimer */
+  --kbd-bg: #E5E7EB;         /* gray-200 - keyboard badges */
+}
+
+.dark {
+  --background: #0F1115;
+  --surface: #1A1D24;
+  --primary: #F3F4F6;        /* Kontrast 16:1 gegen #0F1115 */
+  --secondary: #B0B7C3;      /* hell genug für WCAG AA */
+  --accent: #60A5FA;         /* blue-400 */
+  --accent-light: #93C5FD;
+  --success: #4ADE80;
+  --warning: #FB923C;
+  --border: #374151;
+  --border-strong: #4B5563;
+  --surface-hover: #242832;
+  --surface-muted: #14171C;
+  --kbd-bg: #1F2937;
+}
+
+/* Pulse Ring Animation für coolen Spinner */
+@keyframes pulseRing {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+.pulse-ring {
+  animation: pulseRing 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Live-Indikator: kleiner pulsierender Punkt */
+@keyframes liveDot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.55; transform: scale(0.85); }
+}
+
+.live-dot {
+  animation: liveDot 1.6s ease-in-out infinite;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Focus-Indikator - WCAG AA */
+input:focus, button:focus, a:focus, [tabindex]:focus {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Reduziertes Motion für Nutzer, die das bevorzugen */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Touch-Optimierung */
+.touch-optimized {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+/* Swipe-Container */
+.swipe-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.swipe-content {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.swipe-content.translated {
+  transform: translateX(-280px);
+}
+
+.swipe-handle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 280px;
+  height: 100%;
+}
+
+/* Skip-Link für Tastaturnutzung */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--accent);
+  color: white;
+  padding: 8px 16px;
+  z-index: 100;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Visuell versteckte, aber für Screen Reader zugängliche Elemente */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

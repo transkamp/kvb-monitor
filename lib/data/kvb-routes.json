@@ -1,0 +1,4547 @@
+{
+  "1": [
+    {
+      "name": "Weiden West",
+      "shortName": "WEW",
+      "ass": 70211
+    },
+    {
+      "name": "Weiden Römergrab",
+      "shortName": "WNS",
+      "ass": 24111
+    },
+    {
+      "name": "Weiden Zentrum",
+      "shortName": "WRB",
+      "ass": 26111
+    },
+    {
+      "name": "Bahnstr.",
+      "shortName": "BAH",
+      "ass": 83011
+    },
+    {
+      "name": "Mohnweg",
+      "shortName": "MWG",
+      "ass": 14211
+    },
+    {
+      "name": "Junkersdorf",
+      "shortName": "JUK",
+      "ass": 20011
+    },
+    {
+      "name": "RheinEnergieSTADION",
+      "shortName": "STD",
+      "ass": 18711
+    },
+    {
+      "name": "Alter Militärring",
+      "shortName": "MGD",
+      "ass": 18611
+    },
+    {
+      "name": "Eupener Str.",
+      "shortName": "EUP",
+      "ass": 18111
+    },
+    {
+      "name": "Clarenbachstift",
+      "shortName": "CBS",
+      "ass": 18011
+    },
+    {
+      "name": "Maarweg",
+      "shortName": "MAA",
+      "ass": 17911
+    },
+    {
+      "name": "Aachener Str./Gürtel",
+      "shortName": "ASG",
+      "ass": 17811
+    },
+    {
+      "name": "Melaten",
+      "shortName": "MEL",
+      "ass": 14411
+    },
+    {
+      "name": "Universitätsstr.",
+      "shortName": "UNV",
+      "ass": 14311
+    },
+    {
+      "name": "Moltkestr.",
+      "shortName": "MOL",
+      "ass": 2812
+    },
+    {
+      "name": "Rudolfplatz",
+      "shortName": "RDP",
+      "ass": 2711
+    },
+    {
+      "name": "Neumarkt",
+      "shortName": "NEU",
+      "ass": 211
+    },
+    {
+      "name": "Heumarkt",
+      "shortName": "HMG",
+      "ass": 111
+    },
+    {
+      "name": "Deutzer Freiheit",
+      "shortName": "DZF",
+      "ass": 3911
+    },
+    {
+      "name": "Bf Deutz/Messe",
+      "shortName": "BDM",
+      "ass": 80211
+    },
+    {
+      "name": "Deutz Technische Hochschule",
+      "shortName": "DZB",
+      "ass": 4411
+    },
+    {
+      "name": "Kalk Post",
+      "shortName": "KPO",
+      "ass": 51211
+    },
+    {
+      "name": "Kalk Kapelle",
+      "shortName": "KKP",
+      "ass": 51311
+    },
+    {
+      "name": "Fuldaer Str.",
+      "shortName": "FDS",
+      "ass": 51711
+    },
+    {
+      "name": "Sportpark Höhenberg",
+      "shortName": "HFR",
+      "ass": 51811
+    },
+    {
+      "name": "Kalker Friedhof",
+      "shortName": "KAF",
+      "ass": 53911
+    },
+    {
+      "name": "Merheim",
+      "shortName": "MRH",
+      "ass": 54011
+    },
+    {
+      "name": "Flehbachstr.",
+      "shortName": "FLE",
+      "ass": 54611
+    },
+    {
+      "name": "Brück Mauspfad",
+      "shortName": "BMP",
+      "ass": 54711
+    },
+    {
+      "name": "Lustheide",
+      "shortName": "LUS",
+      "ass": 66811
+    },
+    {
+      "name": "Refrath",
+      "shortName": "RFR",
+      "ass": 66911
+    },
+    {
+      "name": "Kippekausen",
+      "shortName": "KIP",
+      "ass": 67011
+    },
+    {
+      "name": "Frankenforst",
+      "shortName": "FKF",
+      "ass": 67111
+    },
+    {
+      "name": "Neuenweg",
+      "shortName": "NEW",
+      "ass": 66711
+    },
+    {
+      "name": "Kölner Str.",
+      "shortName": "KNS",
+      "ass": 66611
+    },
+    {
+      "name": "Im Hoppenkamp",
+      "shortName": "IHK",
+      "ass": 65511
+    },
+    {
+      "name": "Bensberg",
+      "shortName": "BSB",
+      "ass": 66511
+    }
+  ],
+  "3": [
+    {
+      "name": "Görlinger-Zentrum",
+      "shortName": "MEN",
+      "ass": 94011
+    },
+    {
+      "name": "Ollenhauerring",
+      "shortName": "OHR",
+      "ass": 29811
+    },
+    {
+      "name": "Schaffrathsgasse",
+      "shortName": "SRG",
+      "ass": 24211
+    },
+    {
+      "name": "Bocklemünd",
+      "shortName": "BOC",
+      "ass": 29111
+    },
+    {
+      "name": "Westfriedhof",
+      "shortName": "WSF",
+      "ass": 28311
+    },
+    {
+      "name": "Wolffsohnstr.",
+      "shortName": "WOF",
+      "ass": 28211
+    },
+    {
+      "name": "Akazienweg",
+      "shortName": "AKA",
+      "ass": 26411
+    },
+    {
+      "name": "Rochusplatz",
+      "shortName": "BIK",
+      "ass": 26211
+    },
+    {
+      "name": "Leyendeckerstr.",
+      "shortName": "LEY",
+      "ass": 25511
+    },
+    {
+      "name": "Venloer Str./Gürtel",
+      "shortName": "VSG",
+      "ass": 25111
+    },
+    {
+      "name": "Körnerstr.",
+      "shortName": "KOR",
+      "ass": 23711
+    },
+    {
+      "name": "Piusstr.",
+      "shortName": "PIU",
+      "ass": 23611
+    },
+    {
+      "name": "Hans-Böckler-Platz/Bf West",
+      "shortName": "HBP",
+      "ass": 86711
+    },
+    {
+      "name": "Friesenplatz",
+      "shortName": "FSP",
+      "ass": 3011
+    },
+    {
+      "name": "Appellhofplatz",
+      "shortName": "APB",
+      "ass": 711
+    },
+    {
+      "name": "Neumarkt",
+      "shortName": "NEU",
+      "ass": 211
+    },
+    {
+      "name": "Poststr.",
+      "shortName": "PSS",
+      "ass": 311
+    },
+    {
+      "name": "Severinstr.",
+      "shortName": "SEV",
+      "ass": 1111
+    },
+    {
+      "name": "Suevenstr.",
+      "shortName": "SVS",
+      "ass": 4011
+    },
+    {
+      "name": "Bf Deutz/Lanxess arena",
+      "shortName": "BDK",
+      "ass": 4911
+    },
+    {
+      "name": "Koelnmesse",
+      "shortName": "MSO",
+      "ass": 4211
+    },
+    {
+      "name": "Stegerwaldsiedlung",
+      "shortName": "STE",
+      "ass": 56711
+    },
+    {
+      "name": "Waldecker Str.",
+      "shortName": "WDK",
+      "ass": 56911
+    },
+    {
+      "name": "Buchheim Frankfurter Str.",
+      "shortName": "BUC",
+      "ass": 57711
+    },
+    {
+      "name": "Buchheim Herler Str.",
+      "shortName": "BHE",
+      "ass": 57811
+    },
+    {
+      "name": "Wichheimer Str.",
+      "shortName": "WIC",
+      "ass": 57911
+    },
+    {
+      "name": "Holweide Vischeringstr.",
+      "shortName": "VRS",
+      "ass": 58311
+    },
+    {
+      "name": "Maria-Himmelfahrt-Str.",
+      "shortName": "MHS",
+      "ass": 58411
+    },
+    {
+      "name": "Neufelder Str.",
+      "shortName": "NFS",
+      "ass": 58511
+    },
+    {
+      "name": "Dellbrück Mauspfad",
+      "shortName": "DMP",
+      "ass": 59411
+    },
+    {
+      "name": "Dellbrück Hauptstr.",
+      "shortName": "DHS",
+      "ass": 59511
+    },
+    {
+      "name": "Thielenbruch",
+      "shortName": "THB",
+      "ass": 59611
+    }
+  ],
+  "4": [
+    {
+      "name": "Bocklemünd",
+      "shortName": "BOC",
+      "ass": 29111
+    },
+    {
+      "name": "Westfriedhof",
+      "shortName": "WSF",
+      "ass": 28311
+    },
+    {
+      "name": "Wolffsohnstr.",
+      "shortName": "WOF",
+      "ass": 28211
+    },
+    {
+      "name": "Akazienweg",
+      "shortName": "AKA",
+      "ass": 26411
+    },
+    {
+      "name": "Rochusplatz",
+      "shortName": "BIK",
+      "ass": 26211
+    },
+    {
+      "name": "Leyendeckerstr.",
+      "shortName": "LEY",
+      "ass": 25511
+    },
+    {
+      "name": "Venloer Str./Gürtel",
+      "shortName": "VSG",
+      "ass": 25111
+    },
+    {
+      "name": "Körnerstr.",
+      "shortName": "KOR",
+      "ass": 23711
+    },
+    {
+      "name": "Piusstr.",
+      "shortName": "PIU",
+      "ass": 23611
+    },
+    {
+      "name": "Hans-Böckler-Platz/Bf West",
+      "shortName": "HBP",
+      "ass": 86711
+    },
+    {
+      "name": "Friesenplatz",
+      "shortName": "FSP",
+      "ass": 3011
+    },
+    {
+      "name": "Appellhofplatz",
+      "shortName": "APB",
+      "ass": 711
+    },
+    {
+      "name": "Neumarkt",
+      "shortName": "NEU",
+      "ass": 211
+    },
+    {
+      "name": "Poststr.",
+      "shortName": "PSS",
+      "ass": 311
+    },
+    {
+      "name": "Severinstr.",
+      "shortName": "SEV",
+      "ass": 1111
+    },
+    {
+      "name": "Suevenstr.",
+      "shortName": "SVS",
+      "ass": 4011
+    },
+    {
+      "name": "Bf Deutz/Lanxess arena",
+      "shortName": "BDK",
+      "ass": 4911
+    },
+    {
+      "name": "Koelnmesse",
+      "shortName": "MSO",
+      "ass": 4211
+    },
+    {
+      "name": "Stegerwaldsiedlung",
+      "shortName": "STE",
+      "ass": 56711
+    },
+    {
+      "name": "Grünstr.",
+      "shortName": "GRU",
+      "ass": 56811
+    },
+    {
+      "name": "Mülheim Wiener Platz",
+      "shortName": "WPL",
+      "ass": 57011
+    },
+    {
+      "name": "Keupstr.",
+      "shortName": "KEU",
+      "ass": 63111
+    },
+    {
+      "name": "Von-Sparr-Str.",
+      "shortName": "VSS",
+      "ass": 63211
+    },
+    {
+      "name": "Mülheim Berliner Str.",
+      "shortName": "MBA",
+      "ass": 63311
+    },
+    {
+      "name": "Im Weidenbruch",
+      "shortName": "IMW",
+      "ass": 60611
+    },
+    {
+      "name": "Am Emberg",
+      "shortName": "AEB",
+      "ass": 60711
+    },
+    {
+      "name": "Leuchterstr.",
+      "shortName": "LEU",
+      "ass": 60811
+    },
+    {
+      "name": "Odenthaler Str.",
+      "shortName": "ODS",
+      "ass": 60911
+    },
+    {
+      "name": "Schlebusch",
+      "shortName": "SLB",
+      "ass": 66311
+    }
+  ],
+  "5": [
+    {
+      "name": "Sparkasse Am Butzweilerhof",
+      "shortName": "KPS",
+      "ass": 90311
+    },
+    {
+      "name": "IKEA Am Butzweilerhof",
+      "shortName": "IAK",
+      "ass": 97611
+    },
+    {
+      "name": "Alter Flughafen Butzweilerhof",
+      "shortName": "KOE",
+      "ass": 27411
+    },
+    {
+      "name": "Rektor-Klein-Str.",
+      "shortName": "RKL",
+      "ass": 27211
+    },
+    {
+      "name": "Margaretastr.",
+      "shortName": "MAR",
+      "ass": 27311
+    },
+    {
+      "name": "Iltisstr./Äußere Kanalstr.",
+      "shortName": "ILT",
+      "ass": 24911
+    },
+    {
+      "name": "Lenauplatz",
+      "shortName": "LEN",
+      "ass": 24711
+    },
+    {
+      "name": "Nußbaumerstr.",
+      "shortName": "NBS",
+      "ass": 24611
+    },
+    {
+      "name": "Subbelrather Str./Gürtel",
+      "shortName": "SSG",
+      "ass": 24511
+    },
+    {
+      "name": "Liebigstr.",
+      "shortName": "LIE",
+      "ass": 23911
+    },
+    {
+      "name": "Gutenbergstr.",
+      "shortName": "GUT",
+      "ass": 23811
+    },
+    {
+      "name": "Hans-Böckler-Platz/Bf West",
+      "shortName": "HBP",
+      "ass": 86711
+    },
+    {
+      "name": "Friesenplatz",
+      "shortName": "FSP",
+      "ass": 3011
+    },
+    {
+      "name": "Appellhofplatz",
+      "shortName": "APB",
+      "ass": 711
+    },
+    {
+      "name": "Dom/Hbf",
+      "shortName": "DOM",
+      "ass": 75211
+    },
+    {
+      "name": "Rathaus",
+      "shortName": "RAT",
+      "ass": 611
+    },
+    {
+      "name": "Heumarkt",
+      "shortName": "HMG",
+      "ass": 111
+    }
+  ],
+  "7": [
+    {
+      "name": "Frechen-Benzelrath",
+      "shortName": "BZT",
+      "ass": 70811
+    },
+    {
+      "name": "Mühlengasse",
+      "shortName": "MHG",
+      "ass": 70911
+    },
+    {
+      "name": "Frechen Rathaus",
+      "shortName": "FRR",
+      "ass": 71011
+    },
+    {
+      "name": "Frechen Kirche",
+      "shortName": "FRK",
+      "ass": 71111
+    },
+    {
+      "name": "Frechen Bf",
+      "shortName": "FRB",
+      "ass": 71211
+    },
+    {
+      "name": "Haus Vorst",
+      "shortName": "HVO",
+      "ass": 71311
+    },
+    {
+      "name": "Marsdorf",
+      "shortName": "MAD",
+      "ass": 23511
+    },
+    {
+      "name": "Stüttgenhof",
+      "shortName": "SGH",
+      "ass": 23411
+    },
+    {
+      "name": "Brahmsstr.",
+      "shortName": "BRA",
+      "ass": 17211
+    },
+    {
+      "name": "Dürener Str./Gürtel",
+      "shortName": "DSG",
+      "ass": 17011
+    },
+    {
+      "name": "Wüllnerstr.",
+      "shortName": "WUE",
+      "ass": 16911
+    },
+    {
+      "name": "Aachener Str./Gürtel",
+      "shortName": "ASG",
+      "ass": 17811
+    },
+    {
+      "name": "Melaten",
+      "shortName": "MEL",
+      "ass": 14411
+    },
+    {
+      "name": "Universitätsstr.",
+      "shortName": "UNV",
+      "ass": 14311
+    },
+    {
+      "name": "Moltkestr.",
+      "shortName": "MOL",
+      "ass": 2812
+    },
+    {
+      "name": "Rudolfplatz",
+      "shortName": "RDP",
+      "ass": 2711
+    },
+    {
+      "name": "Neumarkt",
+      "shortName": "NEU",
+      "ass": 211
+    },
+    {
+      "name": "Heumarkt",
+      "shortName": "HMG",
+      "ass": 111
+    },
+    {
+      "name": "Deutzer Freiheit",
+      "shortName": "DZF",
+      "ass": 3911
+    },
+    {
+      "name": "Severinsbrücke",
+      "shortName": "SVB",
+      "ass": 4511
+    },
+    {
+      "name": "Drehbrücke",
+      "shortName": "DRE",
+      "ass": 4611
+    },
+    {
+      "name": "Poller Kirchweg",
+      "shortName": "PKI",
+      "ass": 4711
+    },
+    {
+      "name": "Raiffeisenstr.",
+      "shortName": "RAI",
+      "ass": 44411
+    },
+    {
+      "name": "Poll Salmstr.",
+      "shortName": "POS",
+      "ass": 43811
+    },
+    {
+      "name": "Poll Baumschulenweg",
+      "shortName": "PAB",
+      "ass": 43911
+    },
+    {
+      "name": "Westhoven Kölner Str.",
+      "shortName": "WKS",
+      "ass": 44911
+    },
+    {
+      "name": "Westhoven Berliner Str.",
+      "shortName": "WBS",
+      "ass": 45011
+    },
+    {
+      "name": "Ensen Gilgaustr.",
+      "shortName": "EGI",
+      "ass": 45111
+    },
+    {
+      "name": "Ensen Kloster",
+      "shortName": "EKL",
+      "ass": 45211
+    },
+    {
+      "name": "Porz Steinstr.",
+      "shortName": "PST",
+      "ass": 46611
+    },
+    {
+      "name": "Porz Markt",
+      "shortName": "PZM",
+      "ass": 46711
+    },
+    {
+      "name": "Rosenhügel",
+      "shortName": "RSH",
+      "ass": 22811
+    },
+    {
+      "name": "Zündorf",
+      "shortName": "ZDF",
+      "ass": 48611
+    }
+  ],
+  "9": [
+    {
+      "name": "Sülz Hermeskeiler Platz",
+      "shortName": "SHP",
+      "ass": 16611
+    },
+    {
+      "name": "Mommsenstr.",
+      "shortName": "MOM",
+      "ass": 16511
+    },
+    {
+      "name": "Zülpicher Str./Gürtel",
+      "shortName": "ZPG",
+      "ass": 16411
+    },
+    {
+      "name": "Uniklinik Köln",
+      "shortName": "LIN",
+      "ass": 15511
+    },
+    {
+      "name": "Weyertal",
+      "shortName": "WEY",
+      "ass": 15411
+    },
+    {
+      "name": "Universität",
+      "shortName": "UNI",
+      "ass": 15311
+    },
+    {
+      "name": "Dasselstr./Bf Süd",
+      "shortName": "DBS",
+      "ass": 86511
+    },
+    {
+      "name": "Zülpicher Platz",
+      "shortName": "ZPL",
+      "ass": 2411
+    },
+    {
+      "name": "Mauritiuskirche",
+      "shortName": "MAK",
+      "ass": 411
+    },
+    {
+      "name": "Neumarkt",
+      "shortName": "NEU",
+      "ass": 211
+    },
+    {
+      "name": "Heumarkt",
+      "shortName": "HMG",
+      "ass": 111
+    },
+    {
+      "name": "Deutzer Freiheit",
+      "shortName": "DZF",
+      "ass": 3911
+    },
+    {
+      "name": "Bf Deutz/Messe/Lanxess arena",
+      "shortName": "BDM",
+      "ass": 80211
+    },
+    {
+      "name": "Deutz Fachhochschule"
+    },
+    {
+      "name": "Kalk Post",
+      "shortName": "KPO",
+      "ass": 51211
+    },
+    {
+      "name": "Kalk Kapelle",
+      "shortName": "KKP",
+      "ass": 51311
+    },
+    {
+      "name": "Vingst",
+      "shortName": "VGT",
+      "ass": 52111
+    },
+    {
+      "name": "Ostheim",
+      "shortName": "OSH",
+      "ass": 53311
+    },
+    {
+      "name": "Autobahn",
+      "shortName": "AUT",
+      "ass": 53411
+    },
+    {
+      "name": "Steinweg",
+      "shortName": "SWG",
+      "ass": 55311
+    },
+    {
+      "name": "Porzer Str.",
+      "shortName": "POZ",
+      "ass": 55411
+    },
+    {
+      "name": "Rath/Heumar",
+      "shortName": "RHM",
+      "ass": 55611
+    },
+    {
+      "name": "Röttgensweg",
+      "shortName": "ROE",
+      "ass": 55511
+    },
+    {
+      "name": "Königsforst",
+      "shortName": "KGF",
+      "ass": 55711
+    }
+  ],
+  "12": [
+    {
+      "name": "Zollstock Südfriedhof",
+      "shortName": "ZSF",
+      "ass": 5711
+    },
+    {
+      "name": "Zollstockgürtel",
+      "shortName": "HGW",
+      "ass": 5611
+    },
+    {
+      "name": "Gottesweg",
+      "shortName": "GOW",
+      "ass": 5411
+    },
+    {
+      "name": "Herthastr.",
+      "shortName": "HTH",
+      "ass": 5311
+    },
+    {
+      "name": "Pohligstr.",
+      "shortName": "POH",
+      "ass": 5211
+    },
+    {
+      "name": "Eifelplatz",
+      "shortName": "EIF",
+      "ass": 2111
+    },
+    {
+      "name": "Eifelstr.",
+      "shortName": "EFS",
+      "ass": 2211
+    },
+    {
+      "name": "Barbarossaplatz",
+      "shortName": "BAB",
+      "ass": 2311
+    },
+    {
+      "name": "Zülpicher Platz",
+      "shortName": "ZPL",
+      "ass": 2411
+    },
+    {
+      "name": "Rudolfplatz",
+      "shortName": "RDP",
+      "ass": 2711
+    },
+    {
+      "name": "Friesenplatz",
+      "shortName": "FSP",
+      "ass": 3011
+    },
+    {
+      "name": "Christophstr./Mediapark",
+      "shortName": "CPH",
+      "ass": 3211
+    },
+    {
+      "name": "Hansaring",
+      "shortName": "HSR",
+      "ass": 3611
+    },
+    {
+      "name": "Ebertplatz",
+      "shortName": "EBP",
+      "ass": 3511
+    },
+    {
+      "name": "Lohsestr.",
+      "shortName": "LOH",
+      "ass": 30511
+    },
+    {
+      "name": "Florastr.",
+      "shortName": "FLO",
+      "ass": 30411
+    },
+    {
+      "name": "Neusser Str./Gürtel",
+      "shortName": "NSG",
+      "ass": 30311
+    },
+    {
+      "name": "Mollwitzstr.",
+      "shortName": "MOW",
+      "ass": 33611
+    },
+    {
+      "name": "Scheibenstr.",
+      "shortName": "SCE",
+      "ass": 33711
+    },
+    {
+      "name": "Wilhelm-Sollmann-Str.",
+      "shortName": "WSS",
+      "ass": 36211
+    },
+    {
+      "name": "Niehl",
+      "shortName": "NST",
+      "ass": 30821
+    },
+    {
+      "name": "Geestemünder Str.",
+      "shortName": "GEE",
+      "ass": 36711
+    },
+    {
+      "name": "Fordwerke Süd",
+      "shortName": "FWS",
+      "ass": 36811
+    },
+    {
+      "name": "Fordwerke Mitte",
+      "shortName": "FWM",
+      "ass": 36911
+    },
+    {
+      "name": "Fordwerke Nord",
+      "shortName": "FWN",
+      "ass": 37011
+    },
+    {
+      "name": "Merkenich Mitte",
+      "shortName": "MEM",
+      "ass": 41611
+    },
+    {
+      "name": "Merkenich",
+      "shortName": "MEK",
+      "ass": 41711
+    }
+  ],
+  "13": [
+    {
+      "name": "Sülzgürtel",
+      "shortName": "SZG",
+      "ass": 16011
+    },
+    {
+      "name": "Berrenrather Str./Gürtel",
+      "shortName": "BRG",
+      "ass": 16211
+    },
+    {
+      "name": "Euskirchener Str.",
+      "shortName": "EUS",
+      "ass": 16311
+    },
+    {
+      "name": "Zülpicher Str./Gürtel",
+      "shortName": "ZPG",
+      "ass": 16411
+    },
+    {
+      "name": "Gleueler Str./Gürtel",
+      "shortName": "GSG",
+      "ass": 17311
+    },
+    {
+      "name": "Dürener Str./Gürtel",
+      "shortName": "DSG",
+      "ass": 17011
+    },
+    {
+      "name": "Wüllnerstr.",
+      "shortName": "WUE",
+      "ass": 16911
+    },
+    {
+      "name": "Aachener Str./Gürtel",
+      "shortName": "ASG",
+      "ass": 17811
+    },
+    {
+      "name": "Melatengürtel",
+      "shortName": "OJS",
+      "ass": 18211
+    },
+    {
+      "name": "Weinsbergstr./Gürtel",
+      "shortName": "MLG",
+      "ass": 25411
+    },
+    {
+      "name": "Venloer Str./Gürtel",
+      "shortName": "VSG",
+      "ass": 25111
+    },
+    {
+      "name": "Subbelrather Str./Gürtel",
+      "shortName": "SSG",
+      "ass": 24511
+    },
+    {
+      "name": "Nußbaumerstr.",
+      "shortName": "NBS",
+      "ass": 24611
+    },
+    {
+      "name": "Escher Str.",
+      "shortName": "ECH",
+      "ass": 32611
+    },
+    {
+      "name": "Geldernstr./Parkgürtel",
+      "shortName": "GSP",
+      "ass": 32511
+    },
+    {
+      "name": "Neusser Str./Gürtel",
+      "shortName": "NSG",
+      "ass": 30311
+    },
+    {
+      "name": "Amsterdamer Str./Gürtel",
+      "shortName": "AMG",
+      "ass": 31711
+    },
+    {
+      "name": "Slabystr.",
+      "shortName": "SLA",
+      "ass": 31511
+    },
+    {
+      "name": "Mülheim Wiener Platz",
+      "shortName": "WPL",
+      "ass": 57011
+    },
+    {
+      "name": "Bf Mülheim",
+      "shortName": "BFM",
+      "ass": 57211
+    },
+    {
+      "name": "Buchheim Herler Str.",
+      "shortName": "BHE",
+      "ass": 57811
+    },
+    {
+      "name": "Wichheimer Str.",
+      "shortName": "WIC",
+      "ass": 57911
+    },
+    {
+      "name": "Holweide Vischeringstr.",
+      "shortName": "VRS",
+      "ass": 58311
+    },
+    {
+      "name": "Maria-Himmelfahrt-Str.",
+      "shortName": "MHS",
+      "ass": 58411
+    },
+    {
+      "name": "Neufelder Str.",
+      "shortName": "NFS",
+      "ass": 58511
+    },
+    {
+      "name": "Dellbrück Mauspfad",
+      "shortName": "DMP",
+      "ass": 59411
+    },
+    {
+      "name": "Dellbrück Hauptstr.",
+      "shortName": "DHS",
+      "ass": 59511
+    },
+    {
+      "name": "Thielenbruch",
+      "shortName": "THB",
+      "ass": 59611
+    }
+  ],
+  "15": [
+    {
+      "name": "Ubierring",
+      "shortName": "UBI",
+      "ass": 1711
+    },
+    {
+      "name": "Chlodwigplatz",
+      "shortName": "CWP",
+      "ass": 1811
+    },
+    {
+      "name": "Ulrepforte",
+      "shortName": "ULR",
+      "ass": 1911
+    },
+    {
+      "name": "Eifelstr.",
+      "shortName": "EFS",
+      "ass": 2211
+    },
+    {
+      "name": "Barbarossaplatz",
+      "shortName": "BAB",
+      "ass": 2311
+    },
+    {
+      "name": "Zülpicher Platz",
+      "shortName": "ZPL",
+      "ass": 2411
+    },
+    {
+      "name": "Rudolfplatz",
+      "shortName": "RDP",
+      "ass": 2711
+    },
+    {
+      "name": "Friesenplatz",
+      "shortName": "FSP",
+      "ass": 3011
+    },
+    {
+      "name": "Christophstr./Mediapark",
+      "shortName": "CPH",
+      "ass": 3211
+    },
+    {
+      "name": "Hansaring",
+      "shortName": "HSR",
+      "ass": 3611
+    },
+    {
+      "name": "Ebertplatz",
+      "shortName": "EBP",
+      "ass": 3511
+    },
+    {
+      "name": "Lohsestr.",
+      "shortName": "LOH",
+      "ass": 30511
+    },
+    {
+      "name": "Florastr.",
+      "shortName": "FLO",
+      "ass": 30411
+    },
+    {
+      "name": "Neusser Str./Gürtel",
+      "shortName": "NSG",
+      "ass": 30311
+    },
+    {
+      "name": "Mollwitzstr.",
+      "shortName": "MOW",
+      "ass": 33611
+    },
+    {
+      "name": "Scheibenstr.",
+      "shortName": "SCE",
+      "ass": 33711
+    },
+    {
+      "name": "Wilhelm-Sollmann-Str.",
+      "shortName": "WSS",
+      "ass": 36211
+    },
+    {
+      "name": "Altonaer Platz",
+      "shortName": "ATP",
+      "ass": 36311
+    },
+    {
+      "name": "Herforder Str.",
+      "shortName": "HFD",
+      "ass": 36411
+    },
+    {
+      "name": "Meerfeldstr.",
+      "shortName": "MEE",
+      "ass": 35511
+    },
+    {
+      "name": "Longericher Str.",
+      "shortName": "LGS",
+      "ass": 35611
+    },
+    {
+      "name": "Heimersdorf",
+      "shortName": "HEI",
+      "ass": 38411
+    },
+    {
+      "name": "Chorweiler",
+      "shortName": "CHW",
+      "ass": 38511
+    }
+  ],
+  "16": [
+    {
+      "name": "Bad Godesberg Stadthalle"
+    },
+    {
+      "name": "Bad Godesberg Bf./Löbestr."
+    },
+    {
+      "name": "Plittersdorfer Straße"
+    },
+    {
+      "name": "Wurzerstr."
+    },
+    {
+      "name": "Hochkreuz",
+      "shortName": "AHK",
+      "ass": 89821
+    },
+    {
+      "name": "Max-Löbner-Str./Friesdorf"
+    },
+    {
+      "name": "Ollenhauerstraße"
+    },
+    {
+      "name": "Heussallee/Museumsmeile"
+    },
+    {
+      "name": "Museum Koenig"
+    },
+    {
+      "name": "Bundesrechnungshof/Auswärtiges Amt"
+    },
+    {
+      "name": "Juridicum"
+    },
+    {
+      "name": "Universität/Markt",
+      "shortName": "UNI",
+      "ass": 15311
+    },
+    {
+      "name": "Bonn Hauptbahnhof"
+    },
+    {
+      "name": "Bonn West"
+    },
+    {
+      "name": "Propsthof Nord"
+    },
+    {
+      "name": "Tannenbusch Süd"
+    },
+    {
+      "name": "Tannenbusch Mitte"
+    },
+    {
+      "name": "Buschdorf"
+    },
+    {
+      "name": "Hersel",
+      "shortName": "HRS",
+      "ass": 67811
+    },
+    {
+      "name": "Uedorf",
+      "shortName": "UED",
+      "ass": 67911
+    },
+    {
+      "name": "Widdig",
+      "shortName": "WDG",
+      "ass": 68011
+    },
+    {
+      "name": "Urfeld",
+      "shortName": "URF",
+      "ass": 74311
+    },
+    {
+      "name": "Wesseling Süd",
+      "shortName": "WSU",
+      "ass": 74011
+    },
+    {
+      "name": "Wesseling",
+      "shortName": "WES",
+      "ass": 74111
+    },
+    {
+      "name": "Wesseling Nord",
+      "shortName": "WEN",
+      "ass": 74211
+    },
+    {
+      "name": "Godorf Bf",
+      "shortName": "BFG",
+      "ass": 13411
+    },
+    {
+      "name": "Sürth Bf",
+      "shortName": "SUT",
+      "ass": 12411
+    },
+    {
+      "name": "Michaelshoven",
+      "shortName": "MIC",
+      "ass": 10811
+    },
+    {
+      "name": "Siegstr.",
+      "shortName": "SGS",
+      "ass": 10711
+    },
+    {
+      "name": "Rodenkirchen Bf",
+      "shortName": "BRK",
+      "ass": 10611
+    },
+    {
+      "name": "Heinrich-Lübke-Ufer",
+      "shortName": "HLU",
+      "ass": 89711
+    },
+    {
+      "name": "Bayenthalgürtel",
+      "shortName": "OBU",
+      "ass": 7611
+    },
+    {
+      "name": "Schönhauser Str.",
+      "shortName": "SHS",
+      "ass": 6511
+    },
+    {
+      "name": "Ubierring",
+      "shortName": "UBI",
+      "ass": 1711
+    },
+    {
+      "name": "Chlodwigplatz",
+      "shortName": "CWP",
+      "ass": 1811
+    },
+    {
+      "name": "Ulrepforte",
+      "shortName": "ULR",
+      "ass": 1911
+    },
+    {
+      "name": "Eifelstr.",
+      "shortName": "EFS",
+      "ass": 2211
+    },
+    {
+      "name": "Barbarossaplatz",
+      "shortName": "BAB",
+      "ass": 2311
+    },
+    {
+      "name": "Poststr.",
+      "shortName": "PSS",
+      "ass": 311
+    },
+    {
+      "name": "Neumarkt",
+      "shortName": "NEU",
+      "ass": 211
+    },
+    {
+      "name": "Appellhofplatz",
+      "shortName": "APB",
+      "ass": 711
+    },
+    {
+      "name": "Dom/Hbf",
+      "shortName": "DOM",
+      "ass": 75211
+    },
+    {
+      "name": "Breslauer Platz/Hbf",
+      "shortName": "BRE",
+      "ass": 911
+    },
+    {
+      "name": "Ebertplatz",
+      "shortName": "EBP",
+      "ass": 3511
+    },
+    {
+      "name": "Reichenspergerplatz",
+      "shortName": "RPP",
+      "ass": 3411
+    },
+    {
+      "name": "Kinderkrankenhaus",
+      "shortName": "KKR",
+      "ass": 31611
+    },
+    {
+      "name": "Amsterdamer Str./Gürtel",
+      "shortName": "AMG",
+      "ass": 31711
+    },
+    {
+      "name": "Nesselrodestr.",
+      "shortName": "NRO",
+      "ass": 81811
+    },
+    {
+      "name": "Niehl Sebastianstr.",
+      "shortName": "NIS",
+      "ass": 34311
+    }
+  ],
+  "17": [
+    {
+      "name": "Rodenkirchen Bf",
+      "shortName": "BRK",
+      "ass": 10611
+    },
+    {
+      "name": "Heinrich-Lübke-Ufer",
+      "shortName": "HLU",
+      "ass": 89711
+    },
+    {
+      "name": "Bayenthalgürtel",
+      "shortName": "OBU",
+      "ass": 7611
+    },
+    {
+      "name": "Schönhauser Str.",
+      "shortName": "SHS",
+      "ass": 6511
+    },
+    {
+      "name": "Bonner Wall",
+      "shortName": "ABW",
+      "ass": 2011
+    },
+    {
+      "name": "Chlodwigplatz",
+      "shortName": "CWP",
+      "ass": 1811
+    },
+    {
+      "name": "Kartäuserhof",
+      "shortName": "KAT",
+      "ass": 89411
+    },
+    {
+      "name": "Severinstr.",
+      "shortName": "SEV",
+      "ass": 1111
+    }
+  ],
+  "18": [
+    {
+      "name": "Bonn Hauptbahnhof"
+    },
+    {
+      "name": "Bonn West"
+    },
+    {
+      "name": "Brühler Straße"
+    },
+    {
+      "name": "Robert-Kirchhoff-Straße"
+    },
+    {
+      "name": "Dransdorf"
+    },
+    {
+      "name": "Alfter / Alanus Hochschule",
+      "shortName": "ALF",
+      "ass": 68111
+    },
+    {
+      "name": "Roisdorf West",
+      "shortName": "ROI",
+      "ass": 67211
+    },
+    {
+      "name": "Bornheim Rathaus",
+      "shortName": "BHR",
+      "ass": 62811
+    },
+    {
+      "name": "Bornheim",
+      "shortName": "BOR",
+      "ass": 67311
+    },
+    {
+      "name": "Dersdorf",
+      "shortName": "DER",
+      "ass": 67411
+    },
+    {
+      "name": "Waldorf",
+      "shortName": "WAB",
+      "ass": 67511
+    },
+    {
+      "name": "Merten",
+      "shortName": "MEB",
+      "ass": 67611
+    },
+    {
+      "name": "Walberberg",
+      "shortName": "WBB",
+      "ass": 67711
+    },
+    {
+      "name": "Schwadorf",
+      "shortName": "SWA",
+      "ass": 73911
+    },
+    {
+      "name": "Badorf",
+      "shortName": "BDO",
+      "ass": 73711
+    },
+    {
+      "name": "Brühl Süd",
+      "shortName": "BRS",
+      "ass": 73611
+    },
+    {
+      "name": "Brühl Mitte",
+      "shortName": "BRM",
+      "ass": 73511
+    },
+    {
+      "name": "Brühl Nord",
+      "shortName": "BNO",
+      "ass": 73411
+    },
+    {
+      "name": "Brühl-Vochem"
+    },
+    {
+      "name": "Fischenich",
+      "shortName": "FIB",
+      "ass": 73111
+    },
+    {
+      "name": "Hürth-Hermülheim",
+      "shortName": "HHB",
+      "ass": 73311
+    },
+    {
+      "name": "Kiebitzweg",
+      "shortName": "KIB",
+      "ass": 73211
+    },
+    {
+      "name": "Efferen",
+      "shortName": "EFR",
+      "ass": 73011
+    },
+    {
+      "name": "Klettenbergpark",
+      "shortName": "KLB",
+      "ass": 16711
+    },
+    {
+      "name": "Sülzgürtel",
+      "shortName": "SZG",
+      "ass": 16011
+    },
+    {
+      "name": "Sülzburgstr.",
+      "shortName": "SBU",
+      "ass": 15211
+    },
+    {
+      "name": "Arnulfstr.",
+      "shortName": "ANU",
+      "ass": 15111
+    },
+    {
+      "name": "Weißhausstr.",
+      "shortName": "WEH",
+      "ass": 15011
+    },
+    {
+      "name": "Eifelwall/Stadtarchiv",
+      "shortName": "EFW",
+      "ass": 2611
+    },
+    {
+      "name": "Barbarossaplatz",
+      "shortName": "BAB",
+      "ass": 2311
+    },
+    {
+      "name": "Poststr.",
+      "shortName": "PSS",
+      "ass": 311
+    },
+    {
+      "name": "Neumarkt",
+      "shortName": "NEU",
+      "ass": 211
+    },
+    {
+      "name": "Appellhofplatz",
+      "shortName": "APB",
+      "ass": 711
+    },
+    {
+      "name": "Dom/Hbf",
+      "shortName": "DOM",
+      "ass": 75211
+    },
+    {
+      "name": "Breslauer Platz/Hbf",
+      "shortName": "BRE",
+      "ass": 911
+    },
+    {
+      "name": "Ebertplatz",
+      "shortName": "EBP",
+      "ass": 3511
+    },
+    {
+      "name": "Reichenspergerplatz",
+      "shortName": "RPP",
+      "ass": 3411
+    },
+    {
+      "name": "Zoo/Flora",
+      "shortName": "ZOO",
+      "ass": 31311
+    },
+    {
+      "name": "Boltensternstr.",
+      "shortName": "BOT",
+      "ass": 31411
+    },
+    {
+      "name": "Slabystr.",
+      "shortName": "SLA",
+      "ass": 31511
+    },
+    {
+      "name": "Mülheim Wiener Platz",
+      "shortName": "WPL",
+      "ass": 57011
+    },
+    {
+      "name": "Bf Mülheim",
+      "shortName": "BFM",
+      "ass": 57211
+    },
+    {
+      "name": "Buchheim Herler Str.",
+      "shortName": "BHE",
+      "ass": 57811
+    },
+    {
+      "name": "Holweide Vischeringstr.",
+      "shortName": "VRS",
+      "ass": 58311
+    },
+    {
+      "name": "Wichheimer Str.",
+      "shortName": "WIC",
+      "ass": 57911
+    }
+  ],
+  "106": [
+    {
+      "name": "Marienburg Südpark",
+      "shortName": "MBG",
+      "ass": 8021
+    },
+    {
+      "name": "Marienburger Str.",
+      "shortName": "MBU",
+      "ass": 7921
+    },
+    {
+      "name": "Goltsteinstr./Gürtel",
+      "shortName": "GTS",
+      "ass": 7821
+    },
+    {
+      "name": "Tacitusstr.",
+      "shortName": "TAC",
+      "ass": 6821
+    },
+    {
+      "name": "Koblenzer Str.",
+      "shortName": "KBS",
+      "ass": 6721
+    },
+    {
+      "name": "Bonntor",
+      "shortName": "BON",
+      "ass": 78321
+    },
+    {
+      "name": "Bonner Wall",
+      "shortName": "ABW",
+      "ass": 2011
+    },
+    {
+      "name": "Chlodwigplatz",
+      "shortName": "CWP",
+      "ass": 1811
+    },
+    {
+      "name": "Severinskirche",
+      "shortName": "SVK",
+      "ass": 1521
+    },
+    {
+      "name": "Rosenstr.",
+      "shortName": "ROS",
+      "ass": 1321
+    },
+    {
+      "name": "Severinstr.",
+      "shortName": "SEV",
+      "ass": 1111
+    },
+    {
+      "name": "Waidmarkt",
+      "shortName": "WAI",
+      "ass": 1221
+    },
+    {
+      "name": "Heumarkt",
+      "shortName": "HMG",
+      "ass": 111
+    }
+  ],
+  "120": [
+    {
+      "name": "Blumenberg S-Bahn",
+      "shortName": "BLU",
+      "ass": 875621
+    },
+    {
+      "name": "Kallbergstr.",
+      "shortName": "KLS",
+      "ass": 92821
+    },
+    {
+      "name": "Chorweiler",
+      "shortName": "CHW",
+      "ass": 38511
+    },
+    {
+      "name": "Karl-Marx-Allee",
+      "shortName": "KMA",
+      "ass": 38621
+    },
+    {
+      "name": "Merianstr.",
+      "shortName": "MER",
+      "ass": 39621
+    },
+    {
+      "name": "Haus Fühlingen",
+      "shortName": "HFU",
+      "ass": 40421
+    },
+    {
+      "name": "Fühlingen",
+      "shortName": "FUE",
+      "ass": 40521
+    },
+    {
+      "name": "Arenzhof",
+      "shortName": "ARH",
+      "ass": 81021
+    },
+    {
+      "name": "Blumenbergsweg",
+      "shortName": "BBW",
+      "ass": 88921
+    },
+    {
+      "name": "Mennweg",
+      "shortName": "MNW",
+      "ass": 40621
+    },
+    {
+      "name": "Alte Römerstr.",
+      "shortName": "ARS",
+      "ass": 42421
+    },
+    {
+      "name": "Worringen Süd",
+      "shortName": "WOR",
+      "ass": 42521
+    },
+    {
+      "name": "Am Frohnweiher",
+      "shortName": "AMF",
+      "ass": 521
+    },
+    {
+      "name": "St.-Tönnis-Str.",
+      "shortName": "STS",
+      "ass": 42621
+    },
+    {
+      "name": "Mühlenweiher",
+      "shortName": "MUE",
+      "ass": 43521
+    },
+    {
+      "name": "An den Kaulen",
+      "shortName": "ADK",
+      "ass": 43121
+    },
+    {
+      "name": "Dornstr.",
+      "shortName": "DOS",
+      "ass": 43021
+    },
+    {
+      "name": "Ramrather Weg",
+      "shortName": "RRW",
+      "ass": 75121
+    },
+    {
+      "name": "Wiedenfelder Weg",
+      "shortName": "GHW",
+      "ass": 42821
+    },
+    {
+      "name": "Gohrer Weg",
+      "shortName": "GOH",
+      "ass": 35321
+    },
+    {
+      "name": "Hackhauser Weg",
+      "shortName": "HHW",
+      "ass": 42721
+    },
+    {
+      "name": "Üdesheimer Weg",
+      "shortName": "UDH",
+      "ass": 43421
+    },
+    {
+      "name": "Alte Str.",
+      "shortName": "ALT",
+      "ass": 98221
+    },
+    {
+      "name": "Worringen S-Bahn (Ost)",
+      "shortName": "BFW",
+      "ass": 42021
+    },
+    {
+      "name": "Walter-Dodde-Weg",
+      "shortName": "WDW",
+      "ass": 42121
+    },
+    {
+      "name": "Baptiststr.",
+      "shortName": "BAP",
+      "ass": 42221
+    },
+    {
+      "name": "Further Str.",
+      "shortName": "ROG",
+      "ass": 42321
+    }
+  ],
+  "121": [
+    {
+      "name": "Langel Fähre",
+      "shortName": "LGF",
+      "ass": 40721
+    },
+    {
+      "name": "Langel Nord",
+      "shortName": "LNO",
+      "ass": 40821
+    },
+    {
+      "name": "Langel Mohlenweg",
+      "shortName": "LMO",
+      "ass": 40921
+    },
+    {
+      "name": "Langel Kuhlenweg",
+      "shortName": "LKU",
+      "ass": 41021
+    },
+    {
+      "name": "Rheinkassel",
+      "shortName": "RHK",
+      "ass": 41121
+    },
+    {
+      "name": "Kasselberg",
+      "shortName": "KSS",
+      "ass": 41921
+    },
+    {
+      "name": "Schlettstadter Str.",
+      "shortName": "SLE",
+      "ass": 41821
+    },
+    {
+      "name": "Merkenich",
+      "shortName": "MEK",
+      "ass": 41711
+    },
+    {
+      "name": "Oranjehofstr.",
+      "shortName": "OJH",
+      "ass": 41221
+    },
+    {
+      "name": "Rheinlandstr.",
+      "shortName": "RHS",
+      "ass": 41321
+    },
+    {
+      "name": "Edsel-Ford-Str.",
+      "shortName": "EFO",
+      "ass": 41421
+    },
+    {
+      "name": "Robert-Bosch-Str.",
+      "shortName": "RBS",
+      "ass": 41521
+    },
+    {
+      "name": "Oskar-Schindler-Str.",
+      "shortName": "OSS",
+      "ass": 92921
+    },
+    {
+      "name": "Feldkasseler Weg",
+      "shortName": "FKW",
+      "ass": 85522
+    },
+    {
+      "name": "Marconistr.",
+      "shortName": "MAC",
+      "ass": 85422
+    },
+    {
+      "name": "Marconistr. Ost",
+      "shortName": "MCO",
+      "ass": 85821
+    },
+    {
+      "name": "Morsestr.",
+      "shortName": "MOR",
+      "ass": 85322
+    }
+  ],
+  "122": [
+    {
+      "name": "Wilhelm-Sollmann-Str.",
+      "shortName": "WSS",
+      "ass": 36211
+    },
+    {
+      "name": "Bremerhavener Str.",
+      "shortName": "BRH",
+      "ass": 36521
+    },
+    {
+      "name": "Grüngürtel Longerich",
+      "shortName": "ANP",
+      "ass": 84121
+    },
+    {
+      "name": "Scarletallee",
+      "shortName": "ESO",
+      "ass": 36621
+    },
+    {
+      "name": "Paul-Reifenberg-Str.",
+      "shortName": "PRS",
+      "ass": 62121
+    },
+    {
+      "name": "Seeberg",
+      "shortName": "SEB",
+      "ass": 39521
+    },
+    {
+      "name": "Am Hetzepetsch",
+      "shortName": "AHZ",
+      "ass": 38721
+    },
+    {
+      "name": "Heimersdorf",
+      "shortName": "HEI",
+      "ass": 38411
+    },
+    {
+      "name": "Herstattallee",
+      "shortName": "HTA",
+      "ass": 38821
+    },
+    {
+      "name": "Chorweiler",
+      "shortName": "CHW",
+      "ass": 38511
+    },
+    {
+      "name": "Otto-Müller-Str.",
+      "shortName": "OMS",
+      "ass": 38121
+    },
+    {
+      "name": "Johannesstr.",
+      "shortName": "JOH",
+      "ass": 74621
+    },
+    {
+      "name": "Heinering",
+      "shortName": "HHR",
+      "ass": 37221
+    },
+    {
+      "name": "Pesch Schulstr.",
+      "shortName": "SCU",
+      "ass": 37321
+    },
+    {
+      "name": "Mozartstraße"
+    },
+    {
+      "name": "Kapellenweg",
+      "shortName": "KAP",
+      "ass": 74821
+    }
+  ],
+  "123": [
+    {
+      "name": "Chorweiler",
+      "shortName": "CHW",
+      "ass": 38511
+    },
+    {
+      "name": "Unnauer Weg",
+      "shortName": "UNA",
+      "ass": 39421
+    },
+    {
+      "name": "Lindweilerfeld",
+      "shortName": "LWF",
+      "ass": 39321
+    },
+    {
+      "name": "Pescher Weg",
+      "shortName": "PSC",
+      "ass": 38021
+    },
+    {
+      "name": "Johannesstraße"
+    },
+    {
+      "name": "Heinering",
+      "shortName": "HHR",
+      "ass": 37221
+    },
+    {
+      "name": "Pesch Schulstraße",
+      "shortName": "ESC",
+      "ass": 37721
+    },
+    {
+      "name": "Auweiler",
+      "shortName": "AUW",
+      "ass": 37421
+    },
+    {
+      "name": "Hermann-Löns-Str.",
+      "shortName": "HLS",
+      "ass": 37521
+    },
+    {
+      "name": "Chorbuschstraße"
+    },
+    {
+      "name": "Esch",
+      "shortName": "ESC",
+      "ass": 37721
+    },
+    {
+      "name": "Further Straße"
+    },
+    {
+      "name": "Baptiststraße"
+    },
+    {
+      "name": "Walter-Dodde-Weg",
+      "shortName": "WDW",
+      "ass": 42121
+    },
+    {
+      "name": "Worringen S-Bahn (Ost)",
+      "shortName": "BFW",
+      "ass": 42021
+    },
+    {
+      "name": "Alte Str.",
+      "shortName": "ALT",
+      "ass": 98221
+    },
+    {
+      "name": "Üdesheimer Weg",
+      "shortName": "UDH",
+      "ass": 43421
+    },
+    {
+      "name": "Hackhauser Weg",
+      "shortName": "HHW",
+      "ass": 42721
+    },
+    {
+      "name": "Friedhof Worringen",
+      "shortName": "FHW",
+      "ass": 74921
+    },
+    {
+      "name": "An den Kaulen",
+      "shortName": "ADK",
+      "ass": 43121
+    },
+    {
+      "name": "Wiedenfelder Weg",
+      "shortName": "GHW",
+      "ass": 42821
+    },
+    {
+      "name": "Ramrather Weg",
+      "shortName": "RRW",
+      "ass": 75121
+    },
+    {
+      "name": "Worringen Hafen",
+      "shortName": "WOH",
+      "ass": 50122
+    },
+    {
+      "name": "St.-Tönnis-Str.",
+      "shortName": "STS",
+      "ass": 42621
+    },
+    {
+      "name": "Am Frohnweiher",
+      "shortName": "AMF",
+      "ass": 521
+    },
+    {
+      "name": "Worringen Süd",
+      "shortName": "WOR",
+      "ass": 42521
+    },
+    {
+      "name": "Alte Römerstr.",
+      "shortName": "ARS",
+      "ass": 42421
+    },
+    {
+      "name": "Mennweg",
+      "shortName": "MNW",
+      "ass": 40621
+    },
+    {
+      "name": "Blumenbergsweg",
+      "shortName": "BBW",
+      "ass": 88921
+    },
+    {
+      "name": "Arenzhof",
+      "shortName": "ARH",
+      "ass": 81021
+    },
+    {
+      "name": "Fühlingen",
+      "shortName": "FUE",
+      "ass": 40521
+    },
+    {
+      "name": "Haus Fühlingen",
+      "shortName": "HFU",
+      "ass": 40421
+    },
+    {
+      "name": "Merianstr.",
+      "shortName": "MER",
+      "ass": 39621
+    },
+    {
+      "name": "Karl-Marx-Allee",
+      "shortName": "KMA",
+      "ass": 38621
+    }
+  ],
+  "124": [
+    {
+      "name": "Breslauer Platz/Hbf",
+      "shortName": "BRE",
+      "ass": 911
+    },
+    {
+      "name": "Amsterdamer Str./Gürtel",
+      "shortName": "AMG",
+      "ass": 31711
+    },
+    {
+      "name": "Geestemünder Str.",
+      "shortName": "GEE",
+      "ass": 36711
+    },
+    {
+      "name": "Oranjehofstr.",
+      "shortName": "OJH",
+      "ass": 41221
+    },
+    {
+      "name": "Merkenich",
+      "shortName": "MEK",
+      "ass": 41711
+    }
+  ],
+  "125": [
+    {
+      "name": "Weiler",
+      "shortName": "WEL",
+      "ass": 40121
+    },
+    {
+      "name": "Wezelostr.",
+      "shortName": "WEZ",
+      "ass": 40021
+    },
+    {
+      "name": "Weilerweg",
+      "shortName": "WLW",
+      "ass": 81121
+    },
+    {
+      "name": "Fühlinger Weg",
+      "shortName": "FUW",
+      "ass": 39721
+    },
+    {
+      "name": "Deliastr.",
+      "shortName": "DEL",
+      "ass": 57621
+    },
+    {
+      "name": "Weichselring",
+      "shortName": "WEI",
+      "ass": 40321
+    },
+    {
+      "name": "Karl-Marx-Allee",
+      "shortName": "KMA",
+      "ass": 38621
+    },
+    {
+      "name": "Chorweiler",
+      "shortName": "CHW",
+      "ass": 38511
+    },
+    {
+      "name": "Herstattallee",
+      "shortName": "HTA",
+      "ass": 38821
+    },
+    {
+      "name": "Heimersdorf",
+      "shortName": "HEI",
+      "ass": 38411
+    },
+    {
+      "name": "Zypressenstr.",
+      "shortName": "ZYP",
+      "ass": 38921
+    },
+    {
+      "name": "Stallagsweg",
+      "shortName": "STA",
+      "ass": 39021
+    },
+    {
+      "name": "Pulheimer Str.",
+      "shortName": "PUL",
+      "ass": 39121
+    },
+    {
+      "name": "Longerich S-Bahn",
+      "shortName": "BFL",
+      "ass": 35821
+    },
+    {
+      "name": "Marienberger Weg",
+      "shortName": "MBW",
+      "ass": 39221
+    },
+    {
+      "name": "Pescher Weg",
+      "shortName": "PSC",
+      "ass": 38021
+    },
+    {
+      "name": "Otto-Müller-Str.",
+      "shortName": "OMS",
+      "ass": 38121
+    },
+    {
+      "name": "Gewerbegebiet Pesch",
+      "shortName": "GWP",
+      "ass": 38221
+    },
+    {
+      "name": "Gewerbegebiet Pesch Nord",
+      "shortName": "GPN",
+      "ass": 78121
+    },
+    {
+      "name": "Donatusstr.",
+      "shortName": "DON",
+      "ass": 38321
+    },
+    {
+      "name": "Escher See",
+      "shortName": "EHS",
+      "ass": 77421
+    },
+    {
+      "name": "Am Braunsacker",
+      "shortName": "ABR",
+      "ass": 77521
+    },
+    {
+      "name": "Chorbuschstr.",
+      "shortName": "CHO",
+      "ass": 37621
+    },
+    {
+      "name": "Esch",
+      "shortName": "ESC",
+      "ass": 37721
+    },
+    {
+      "name": "Johannes-Prassel-Str.",
+      "shortName": "JPS",
+      "ass": 37821
+    }
+  ],
+  "126": [
+    {
+      "name": "Bocklemünd",
+      "shortName": "BOC",
+      "ass": 29111
+    },
+    {
+      "name": "Grevenbroicher Str.",
+      "shortName": "GRE",
+      "ass": 29321
+    },
+    {
+      "name": "Kappelsweg",
+      "shortName": "KAW",
+      "ass": 5521
+    },
+    {
+      "name": "Dohmengasse",
+      "shortName": "DOH",
+      "ass": 29521
+    },
+    {
+      "name": "Buschweg",
+      "shortName": "BCH",
+      "ass": 30221
+    },
+    {
+      "name": "Auweilerweg",
+      "shortName": "AWW",
+      "ass": 29721
+    },
+    {
+      "name": "Heinering",
+      "shortName": "HHR",
+      "ass": 37221
+    },
+    {
+      "name": "Pesch Schulstr.",
+      "shortName": "SCU",
+      "ass": 37321
+    },
+    {
+      "name": "Auweiler",
+      "shortName": "AUW",
+      "ass": 37421
+    },
+    {
+      "name": "Hermann-Löns-Str.",
+      "shortName": "HLS",
+      "ass": 37521
+    },
+    {
+      "name": "Chorbuschstr.",
+      "shortName": "CHO",
+      "ass": 37621
+    },
+    {
+      "name": "Esch Friedhof",
+      "shortName": "ESF",
+      "ass": 85721
+    },
+    {
+      "name": "Blockstr.",
+      "shortName": "BLO",
+      "ass": 39921
+    },
+    {
+      "name": "Friedhof Chorweiler",
+      "shortName": "FHC",
+      "ass": 39821
+    },
+    {
+      "name": "Weilerweg",
+      "shortName": "WLW",
+      "ass": 81121
+    },
+    {
+      "name": "Fühlinger Weg",
+      "shortName": "FUW",
+      "ass": 39721
+    },
+    {
+      "name": "Deliastr.",
+      "shortName": "DEL",
+      "ass": 57621
+    },
+    {
+      "name": "Havelstr.",
+      "shortName": "HAV",
+      "ass": 88321
+    },
+    {
+      "name": "Weserpromenade",
+      "shortName": "WEP",
+      "ass": 88121
+    },
+    {
+      "name": "Neißestr.",
+      "shortName": "NEI",
+      "ass": 88221
+    },
+    {
+      "name": "Weichselring",
+      "shortName": "WEI",
+      "ass": 40321
+    },
+    {
+      "name": "Karl-Marx-Allee",
+      "shortName": "KMA",
+      "ass": 38621
+    },
+    {
+      "name": "Chorweiler",
+      "shortName": "CHW",
+      "ass": 38511
+    }
+  ],
+  "130": [
+    {
+      "name": "Sürth Rodderweg",
+      "shortName": "SRW",
+      "ass": 66421
+    },
+    {
+      "name": "Unter Buschweg",
+      "shortName": "UBW",
+      "ass": 52921
+    },
+    {
+      "name": "Sürth Bf",
+      "shortName": "SUT",
+      "ass": 12411
+    },
+    {
+      "name": "Heinrich-Erpenbach-Str.",
+      "shortName": "ERP",
+      "ass": 24821
+    },
+    {
+      "name": "Sürther Feldallee",
+      "shortName": "SFA",
+      "ass": 22621
+    },
+    {
+      "name": "Eygelshovener Str.",
+      "shortName": "EYG",
+      "ass": 20221
+    },
+    {
+      "name": "Friedhof Rodenkirchen",
+      "shortName": "FHR",
+      "ass": 10021
+    },
+    {
+      "name": "Rotdornstr.",
+      "shortName": "RTS",
+      "ass": 5021
+    },
+    {
+      "name": "Kriemhildstr.",
+      "shortName": "KHS",
+      "ass": 47221
+    },
+    {
+      "name": "Rodenkirchen Bf",
+      "shortName": "BRK",
+      "ass": 10611
+    },
+    {
+      "name": "Frankstr.",
+      "shortName": "FRA",
+      "ass": 11021
+    },
+    {
+      "name": "Heinrich-Lübke-Ufer",
+      "shortName": "HLU",
+      "ass": 89711
+    },
+    {
+      "name": "Bayenthalgürtel",
+      "shortName": "OBU",
+      "ass": 7611
+    },
+    {
+      "name": "Goltsteinstr./Gürtel",
+      "shortName": "GTS",
+      "ass": 7821
+    },
+    {
+      "name": "Bonner Str./Gürtel",
+      "shortName": "BOG",
+      "ass": 8121
+    },
+    {
+      "name": "Brühler Str./Gürtel",
+      "shortName": "BSG",
+      "ass": 7421
+    },
+    {
+      "name": "Leichweg",
+      "shortName": "LCH",
+      "ass": 7121
+    },
+    {
+      "name": "Zollstockgürtel",
+      "shortName": "HGW",
+      "ass": 5611
+    },
+    {
+      "name": "Bernkasteler Str.",
+      "shortName": "BKA",
+      "ass": 6321
+    },
+    {
+      "name": "Siebengebirgsallee",
+      "shortName": "SGA",
+      "ass": 16821
+    },
+    {
+      "name": "Sülzgürtel",
+      "shortName": "SZG",
+      "ass": 16011
+    },
+    {
+      "name": "Berrenrather Str./Gürtel",
+      "shortName": "BRG",
+      "ass": 16211
+    },
+    {
+      "name": "Gerolsteiner Str.",
+      "shortName": "SBE",
+      "ass": 15721
+    },
+    {
+      "name": "Konradstr.",
+      "shortName": "KON",
+      "ass": 15621
+    },
+    {
+      "name": "Enrique-Schmidt-Cuadra-Weg",
+      "shortName": "ECW",
+      "ass": 50421
+    },
+    {
+      "name": "Universität",
+      "shortName": "UNI",
+      "ass": 15311
+    }
+  ],
+  "131": [
+    {
+      "name": "Sürth Bf",
+      "shortName": "SUT",
+      "ass": 12411
+    },
+    {
+      "name": "Wesselinger Str.",
+      "shortName": "WLI",
+      "ass": 12521
+    },
+    {
+      "name": "Marktplatz Sürth",
+      "shortName": "MAP",
+      "ass": 12621
+    },
+    {
+      "name": "Kölnstr.",
+      "shortName": "KST",
+      "ass": 12721
+    },
+    {
+      "name": "Ernst-Volland-Str.",
+      "shortName": "EVS",
+      "ass": 12821
+    },
+    {
+      "name": "Hammerschmidtstr.",
+      "shortName": "HAM",
+      "ass": 12921
+    },
+    {
+      "name": "Ritterstr.",
+      "shortName": "RIT",
+      "ass": 13021
+    },
+    {
+      "name": "Weißer Hauptstr.",
+      "shortName": "WHS",
+      "ass": 13121
+    },
+    {
+      "name": "Weiß Friedhof",
+      "shortName": "WEF",
+      "ass": 13221
+    },
+    {
+      "name": "Zum Hedelsberg",
+      "shortName": "ZHE",
+      "ass": 13321
+    },
+    {
+      "name": "Adolf-Menzel-Str.",
+      "shortName": "ADM",
+      "ass": 11921
+    },
+    {
+      "name": "Richard-Wagner-Str.",
+      "shortName": "RWS",
+      "ass": 11821
+    },
+    {
+      "name": "Grüngürtelstr.",
+      "shortName": "GGS",
+      "ass": 11721
+    },
+    {
+      "name": "St.-Joseph-Kirche",
+      "shortName": "SJK",
+      "ass": 35421
+    },
+    {
+      "name": "Siegfriedstr.",
+      "shortName": "SFS",
+      "ass": 11621
+    },
+    {
+      "name": "Rodenkirchen Rathaus",
+      "shortName": "ROD",
+      "ass": 11121
+    },
+    {
+      "name": "Maternusplatz",
+      "shortName": "MAT",
+      "ass": 10921
+    },
+    {
+      "name": "Rodenkirchen Bf",
+      "shortName": "BRK",
+      "ass": 10611
+    },
+    {
+      "name": "Konrad-Adenauer-Str.",
+      "shortName": "KOS",
+      "ass": 12021
+    },
+    {
+      "name": "Bonner Landstr.",
+      "shortName": "BLD",
+      "ass": 9421
+    },
+    {
+      "name": "Hochkirchen",
+      "shortName": "HOC",
+      "ass": 9521
+    },
+    {
+      "name": "Lerchenweg",
+      "shortName": "LER",
+      "ass": 9621
+    },
+    {
+      "name": "Reiherstr.",
+      "shortName": "REH",
+      "ass": 77721
+    },
+    {
+      "name": "Habichtstraße"
+    },
+    {
+      "name": "Rondorf",
+      "shortName": "RON",
+      "ass": 9721
+    },
+    {
+      "name": "Bödinger Str.",
+      "shortName": "BOE",
+      "ass": 9821
+    },
+    {
+      "name": "Am Steinneuerhof",
+      "shortName": "ASH",
+      "ass": 10121
+    },
+    {
+      "name": "Friedhof Steinneuerhof",
+      "shortName": "FSH",
+      "ass": 10221
+    },
+    {
+      "name": "August-Wegelin-Str.",
+      "shortName": "HOE",
+      "ass": 9221
+    },
+    {
+      "name": "Höningen Siedlung",
+      "shortName": "HOS",
+      "ass": 9321
+    },
+    {
+      "name": "Heeresamt",
+      "shortName": "HER",
+      "ass": 7321
+    },
+    {
+      "name": "Liblarer Str.",
+      "shortName": "LIB",
+      "ass": 7221
+    },
+    {
+      "name": "Zollstock Südfriedhof",
+      "shortName": "ZSF",
+      "ass": 5711
+    },
+    {
+      "name": "Kendenicher Str. (Bussteig A)",
+      "shortName": "KDS",
+      "ass": 6021
+    },
+    {
+      "name": "Oberer Komarweg",
+      "shortName": "OKW",
+      "ass": 6121
+    },
+    {
+      "name": "Kendenicher Str. (Bussteig C)",
+      "shortName": "KDS",
+      "ass": 6021
+    },
+    {
+      "name": "Brüggener Str.",
+      "shortName": "BGG",
+      "ass": 6221
+    },
+    {
+      "name": "Zollstockgürtel",
+      "shortName": "HGW",
+      "ass": 5611
+    },
+    {
+      "name": "Roisdorfer Str.",
+      "shortName": "RDS",
+      "ass": 5921
+    },
+    {
+      "name": "Zollstocksweg",
+      "shortName": "ZSW",
+      "ass": 5821
+    },
+    {
+      "name": "Gottesweg",
+      "shortName": "GOW",
+      "ass": 5411
+    },
+    {
+      "name": "Paul-Nießen-Str.",
+      "shortName": "PNS",
+      "ass": 91621
+    },
+    {
+      "name": "Rhöndorfer Str.",
+      "shortName": "RHO",
+      "ass": 15921
+    },
+    {
+      "name": "Sülzburgstr.",
+      "shortName": "SBU",
+      "ass": 15211
+    },
+    {
+      "name": "Gerolsteiner Str.",
+      "shortName": "SBE",
+      "ass": 15721
+    },
+    {
+      "name": "Berrenrather Str./Gürtel",
+      "shortName": "BRG",
+      "ass": 16211
+    }
+  ],
+  "132": [
+    {
+      "name": "Frankenstr.",
+      "shortName": "FRS",
+      "ass": 8821
+    },
+    {
+      "name": "Engeldorfer Hof",
+      "shortName": "EDH",
+      "ass": 8921
+    },
+    {
+      "name": "Auf der Freiheit",
+      "shortName": "ADF",
+      "ass": 75421
+    },
+    {
+      "name": "Meschenich Kirche",
+      "shortName": "MSK",
+      "ass": 8621
+    },
+    {
+      "name": "Am Kölnberg",
+      "shortName": "AKB",
+      "ass": 8521
+    },
+    {
+      "name": "Westerwaldstr.",
+      "shortName": "WWS",
+      "ass": 9921
+    },
+    {
+      "name": "Bödinger Str.",
+      "shortName": "BOE",
+      "ass": 9821
+    },
+    {
+      "name": "Rondorf",
+      "shortName": "RON",
+      "ass": 9721
+    },
+    {
+      "name": "Reiherstr.",
+      "shortName": "REH",
+      "ass": 77721
+    },
+    {
+      "name": "Habichtstraße"
+    },
+    {
+      "name": "Lerchenweg",
+      "shortName": "LER",
+      "ass": 9621
+    },
+    {
+      "name": "Hochkirchen",
+      "shortName": "HOC",
+      "ass": 9521
+    },
+    {
+      "name": "Lindenweg",
+      "shortName": "LIW",
+      "ass": 84721
+    },
+    {
+      "name": "Wasserwerk",
+      "shortName": "WSW",
+      "ass": 7521
+    },
+    {
+      "name": "Arnoldshöhe",
+      "shortName": "ANH",
+      "ass": 8421
+    },
+    {
+      "name": "Leyboldstr.",
+      "shortName": "LBD",
+      "ass": 8321
+    },
+    {
+      "name": "Gaedestr.",
+      "shortName": "GAE",
+      "ass": 8221
+    },
+    {
+      "name": "Bonner Str./Gürtel",
+      "shortName": "BOG",
+      "ass": 8121
+    },
+    {
+      "name": "Cäsarstr.",
+      "shortName": "CAE",
+      "ass": 7021
+    },
+    {
+      "name": "Mannsfeld",
+      "shortName": "MAN",
+      "ass": 6921
+    },
+    {
+      "name": "Marktstr.",
+      "shortName": "BNT",
+      "ass": 6623
+    },
+    {
+      "name": "Bonner Wall",
+      "shortName": "ABW",
+      "ass": 2011
+    },
+    {
+      "name": "Chlodwigplatz",
+      "shortName": "CWP",
+      "ass": 1811
+    },
+    {
+      "name": "Severinskirche",
+      "shortName": "SVK",
+      "ass": 1521
+    },
+    {
+      "name": "Rosenstr.",
+      "shortName": "ROS",
+      "ass": 1321
+    },
+    {
+      "name": "Severinstr.",
+      "shortName": "SEV",
+      "ass": 1111
+    },
+    {
+      "name": "Waidmarkt",
+      "shortName": "WAI",
+      "ass": 1221
+    },
+    {
+      "name": "Heumarkt",
+      "shortName": "HMG",
+      "ass": 111
+    },
+    {
+      "name": "Breslauer Platz/Hbf",
+      "shortName": "BRE",
+      "ass": 911
+    }
+  ],
+  "133": [
+    {
+      "name": "Zollstock Südfriedhof",
+      "shortName": "ZSF",
+      "ass": 5711
+    },
+    {
+      "name": "Liblarer Str.",
+      "shortName": "LIB",
+      "ass": 7221
+    },
+    {
+      "name": "Brühler Str./Gürtel",
+      "shortName": "BSG",
+      "ass": 7421
+    },
+    {
+      "name": "Rheinsteinstr.",
+      "shortName": "REI",
+      "ass": 6421
+    },
+    {
+      "name": "Mannsfeld",
+      "shortName": "MAN",
+      "ass": 6921
+    },
+    {
+      "name": "Marktstr.",
+      "shortName": "BNT",
+      "ass": 6623
+    },
+    {
+      "name": "Bonner Wall",
+      "shortName": "ABW",
+      "ass": 2011
+    },
+    {
+      "name": "Chlodwigplatz",
+      "shortName": "CWP",
+      "ass": 1811
+    },
+    {
+      "name": "Ubierring",
+      "shortName": "UBI",
+      "ass": 1711
+    },
+    {
+      "name": "Rheinauhafen",
+      "shortName": "RHA",
+      "ass": 74422
+    },
+    {
+      "name": "Bayenwerft",
+      "shortName": "BAW",
+      "ass": 21021
+    },
+    {
+      "name": "Schokoladenmuseum",
+      "shortName": "SCH",
+      "ass": 71921
+    },
+    {
+      "name": "Heumarkt",
+      "shortName": "HMG",
+      "ass": 111
+    },
+    {
+      "name": "Breslauer Platz/Hbf",
+      "shortName": "BRE",
+      "ass": 911
+    }
+  ],
+  "134": [
+    {
+      "name": "Sürth Bf",
+      "shortName": "SUT",
+      "ass": 12411
+    },
+    {
+      "name": "Wesselinger Str.",
+      "shortName": "WLI",
+      "ass": 12521
+    },
+    {
+      "name": "Marktplatz Sürth",
+      "shortName": "MAP",
+      "ass": 12621
+    },
+    {
+      "name": "Kölnstr.",
+      "shortName": "KST",
+      "ass": 12721
+    },
+    {
+      "name": "Ernst-Volland-Str.",
+      "shortName": "EVS",
+      "ass": 12821
+    },
+    {
+      "name": "Hammerschmidtstr.",
+      "shortName": "HAM",
+      "ass": 12921
+    },
+    {
+      "name": "Ritterstr.",
+      "shortName": "RIT",
+      "ass": 13021
+    },
+    {
+      "name": "Weißer Hauptstr.",
+      "shortName": "WHS",
+      "ass": 13121
+    },
+    {
+      "name": "Weiß Friedhof",
+      "shortName": "WEF",
+      "ass": 13221
+    },
+    {
+      "name": "Zum Hedelsberg",
+      "shortName": "ZHE",
+      "ass": 13321
+    },
+    {
+      "name": "Adolf-Menzel-Str.",
+      "shortName": "ADM",
+      "ass": 11921
+    },
+    {
+      "name": "Richard-Wagner-Str.",
+      "shortName": "RWS",
+      "ass": 11821
+    },
+    {
+      "name": "Grüngürtelstr.",
+      "shortName": "GGS",
+      "ass": 11721
+    },
+    {
+      "name": "St.-Joseph-Kirche",
+      "shortName": "SJK",
+      "ass": 35421
+    },
+    {
+      "name": "Siegfriedstr.",
+      "shortName": "SFS",
+      "ass": 11621
+    },
+    {
+      "name": "Rodenkirchen Rathaus",
+      "shortName": "ROD",
+      "ass": 11121
+    },
+    {
+      "name": "Maternusplatz",
+      "shortName": "MAT",
+      "ass": 10921
+    },
+    {
+      "name": "Rodenkirchen Bf",
+      "shortName": "BRK",
+      "ass": 10611
+    },
+    {
+      "name": "Frankstr.",
+      "shortName": "FRA",
+      "ass": 11021
+    },
+    {
+      "name": "Heinrich-Lübke-Ufer",
+      "shortName": "HLU",
+      "ass": 89711
+    },
+    {
+      "name": "Bayenthalgürtel",
+      "shortName": "OBU",
+      "ass": 7611
+    },
+    {
+      "name": "Goltsteinstr./Gürtel",
+      "shortName": "GTS",
+      "ass": 7821
+    },
+    {
+      "name": "Bonner Str./Gürtel",
+      "shortName": "BOG",
+      "ass": 8121
+    },
+    {
+      "name": "Brühler Str./Gürtel",
+      "shortName": "BSG",
+      "ass": 7421
+    },
+    {
+      "name": "Leichweg",
+      "shortName": "LCH",
+      "ass": 7121
+    },
+    {
+      "name": "Zollstockgürtel",
+      "shortName": "HGW",
+      "ass": 5611
+    },
+    {
+      "name": "Bernkasteler Str.",
+      "shortName": "BKA",
+      "ass": 6321
+    },
+    {
+      "name": "Siebengebirgsallee",
+      "shortName": "SGA",
+      "ass": 16821
+    },
+    {
+      "name": "Sülzgürtel",
+      "shortName": "SZG",
+      "ass": 16011
+    },
+    {
+      "name": "Berrenrather Str./Gürtel",
+      "shortName": "BRG",
+      "ass": 16211
+    },
+    {
+      "name": "Gerolsteiner Str.",
+      "shortName": "SBE",
+      "ass": 15721
+    },
+    {
+      "name": "Konradstr.",
+      "shortName": "KON",
+      "ass": 15621
+    },
+    {
+      "name": "Enrique-Schmidt-Cuadra-Weg",
+      "shortName": "ECW",
+      "ass": 50421
+    },
+    {
+      "name": "Universität",
+      "shortName": "UNI",
+      "ass": 15311
+    }
+  ],
+  "135": [
+    {
+      "name": "Campingplatz Rodenkirchen"
+    },
+    {
+      "name": "Uferstr.",
+      "shortName": "UFS",
+      "ass": 11421
+    },
+    {
+      "name": "Grimmelshausenstr.",
+      "shortName": "GRI",
+      "ass": 11221
+    },
+    {
+      "name": "Siegfriedstr.",
+      "shortName": "SFS",
+      "ass": 11621
+    },
+    {
+      "name": "Rodenkirchen Rathaus",
+      "shortName": "ROD",
+      "ass": 11121
+    },
+    {
+      "name": "Maternusplatz",
+      "shortName": "MAT",
+      "ass": 10921
+    },
+    {
+      "name": "Rodenkirchen Bf",
+      "shortName": "BRK",
+      "ass": 10611
+    },
+    {
+      "name": "Schwabenstr.",
+      "shortName": "SCW",
+      "ass": 12121
+    },
+    {
+      "name": "Schillingsrotter Str.",
+      "shortName": "SIL",
+      "ass": 12221
+    },
+    {
+      "name": "Emil-Hoffmann-Str.",
+      "shortName": "ANF",
+      "ass": 12321
+    },
+    {
+      "name": "Kirschbaumweg",
+      "shortName": "KIR",
+      "ass": 10321
+    },
+    {
+      "name": "Mannesmannstr.",
+      "shortName": "MMS",
+      "ass": 10421
+    },
+    {
+      "name": "Hahnwald",
+      "shortName": "HAH",
+      "ass": 10521
+    },
+    {
+      "name": "IKEA Godorf",
+      "shortName": "KGW",
+      "ass": 87121
+    },
+    {
+      "name": "Otto-Hahn-Str.",
+      "shortName": "OHS",
+      "ass": 13621
+    },
+    {
+      "name": "Bunsenstr.",
+      "shortName": "BUN",
+      "ass": 13721
+    },
+    {
+      "name": "Godorf Bf",
+      "shortName": "BFG",
+      "ass": 13411
+    },
+    {
+      "name": "Pierstr.",
+      "shortName": "PIE",
+      "ass": 13521
+    },
+    {
+      "name": "Friedhof Godorf",
+      "shortName": "FHG",
+      "ass": 13821
+    },
+    {
+      "name": "Immendorf Siedlung",
+      "shortName": "ISI",
+      "ass": 13922
+    },
+    {
+      "name": "Immendorf Schule",
+      "shortName": "IMS",
+      "ass": 84021
+    },
+    {
+      "name": "Immendorf",
+      "shortName": "IMM",
+      "ass": 14021
+    },
+    {
+      "name": "Zaunhof",
+      "shortName": "ZAU",
+      "ass": 14121
+    },
+    {
+      "name": "Kettelerstr.",
+      "shortName": "KET",
+      "ass": 9021
+    },
+    {
+      "name": "Meschenich Kirche",
+      "shortName": "MSK",
+      "ass": 8621
+    }
+  ],
+  "136": [
+    {
+      "name": "Daimlerstr.",
+      "shortName": "LDS",
+      "ass": 91721
+    },
+    {
+      "name": "Zusestr.",
+      "shortName": "ZUS",
+      "ass": 89621
+    },
+    {
+      "name": "Dieselstr.",
+      "shortName": "DIS",
+      "ass": 21421
+    },
+    {
+      "name": "Seithümerstr.",
+      "shortName": "SEI",
+      "ass": 21321
+    },
+    {
+      "name": "Bf Lövenich",
+      "shortName": "LOV",
+      "ass": 21221
+    },
+    {
+      "name": "Weiden Zentrum",
+      "shortName": "WRB",
+      "ass": 26111
+    },
+    {
+      "name": "Weiden Zentrum (Stadtb.)",
+      "shortName": "WRB",
+      "ass": 26111
+    },
+    {
+      "name": "Ostlandstr.",
+      "shortName": "OST",
+      "ass": 22721
+    },
+    {
+      "name": "Göttinger Str.",
+      "shortName": "GOT",
+      "ass": 82321
+    },
+    {
+      "name": "Diepenbeekallee",
+      "shortName": "DPB",
+      "ass": 22921
+    },
+    {
+      "name": "Bistritzer Str.",
+      "shortName": "BSZ",
+      "ass": 87221
+    },
+    {
+      "name": "Beethovenstr.",
+      "shortName": "BET",
+      "ass": 20621
+    },
+    {
+      "name": "Sterrenhofweg",
+      "shortName": "SHW",
+      "ass": 20521
+    },
+    {
+      "name": "Willi-Lauf-Allee",
+      "shortName": "WLA",
+      "ass": 24421
+    },
+    {
+      "name": "Wiener Weg",
+      "shortName": "WNW",
+      "ass": 20921
+    },
+    {
+      "name": "Eichenstr.",
+      "shortName": "EIS",
+      "ass": 25221
+    },
+    {
+      "name": "Else-Lang-Str.",
+      "shortName": "ELA",
+      "ass": 99721
+    },
+    {
+      "name": "Werthmannstraße"
+    },
+    {
+      "name": "Prälat-van-Acken-Str.",
+      "shortName": "PVA",
+      "ass": 85022
+    },
+    {
+      "name": "Hohenlind",
+      "shortName": "HOL",
+      "ass": 17421
+    },
+    {
+      "name": "Brahmsstr.",
+      "shortName": "BRA",
+      "ass": 17211
+    },
+    {
+      "name": "Kitschburger Str.",
+      "shortName": "KIT",
+      "ass": 17121
+    },
+    {
+      "name": "Dürener Str./Gürtel",
+      "shortName": "DSG",
+      "ass": 17011
+    },
+    {
+      "name": "Theresienstr.",
+      "shortName": "THE",
+      "ass": 14921
+    },
+    {
+      "name": "Karl-Schwering-Platz",
+      "shortName": "KSP",
+      "ass": 14821
+    },
+    {
+      "name": "Hildegardis-Krankenhaus",
+      "shortName": "HKH",
+      "ass": 14521
+    },
+    {
+      "name": "Wiso-Fakultät",
+      "shortName": "WFA",
+      "ass": 84621
+    },
+    {
+      "name": "Roonstr.",
+      "shortName": "ROO",
+      "ass": 2921
+    },
+    {
+      "name": "Moltkestr.",
+      "shortName": "MOL",
+      "ass": 2812
+    },
+    {
+      "name": "Rudolfplatz",
+      "shortName": "RDP",
+      "ass": 2711
+    },
+    {
+      "name": "Neumarkt",
+      "shortName": "NEU",
+      "ass": 211
+    }
+  ],
+  "138": [
+    {
+      "name": "Güterverkehrszentrum Süd",
+      "shortName": "GVS",
+      "ass": 91521
+    },
+    {
+      "name": "Güterverkehrszentrum",
+      "shortName": "GVZ",
+      "ass": 85921
+    },
+    {
+      "name": "Oberer Komarweg",
+      "shortName": "OKW",
+      "ass": 6121
+    },
+    {
+      "name": "Kendenicher Str.",
+      "shortName": "KDS",
+      "ass": 6021
+    }
+  ],
+  "139": [
+    {
+      "name": "Wasseramselweg",
+      "shortName": "WAW",
+      "ass": 96521
+    },
+    {
+      "name": "Müngersdorf Technologiepark S-Bahn",
+      "shortName": "MTP",
+      "ass": 18521
+    },
+    {
+      "name": "Technologiepark Köln",
+      "shortName": "TPK",
+      "ass": 19721
+    },
+    {
+      "name": "Karnevalsmuseum",
+      "shortName": "WIM",
+      "ass": 25921
+    },
+    {
+      "name": "Franz-Liszt-Str.",
+      "shortName": "FRL",
+      "ass": 75521
+    },
+    {
+      "name": "Am Alten Güterbahnhof",
+      "shortName": "AAG",
+      "ass": 64321
+    },
+    {
+      "name": "Rochusplatz",
+      "shortName": "BIK",
+      "ass": 26211
+    },
+    {
+      "name": "Borsigstr.",
+      "shortName": "BGS",
+      "ass": 25621
+    },
+    {
+      "name": "Mathilde-Herz-Weg",
+      "shortName": "HCH",
+      "ass": 26621
+    },
+    {
+      "name": "Feltenstr.",
+      "shortName": "FEL",
+      "ass": 26721
+    },
+    {
+      "name": "Emilstr.",
+      "shortName": "EMI",
+      "ass": 26821
+    },
+    {
+      "name": "Erlenweg",
+      "shortName": "ERL",
+      "ass": 26921
+    },
+    {
+      "name": "Mühlenweg",
+      "shortName": "MHL",
+      "ass": 27021
+    },
+    {
+      "name": "Blériotstr.",
+      "shortName": "BLE",
+      "ass": 27621
+    },
+    {
+      "name": "Hugo-Eckener-Str.",
+      "shortName": "HES",
+      "ass": 27521
+    },
+    {
+      "name": "Von-Hünefeld-Str.",
+      "shortName": "VHS",
+      "ass": 27721
+    },
+    {
+      "name": "Gunther-Plüschow-Str.",
+      "shortName": "GPS",
+      "ass": 66121
+    },
+    {
+      "name": "Mathias-Brüggen-Str.",
+      "shortName": "MBS",
+      "ass": 27821
+    },
+    {
+      "name": "Sparkasse Am Butzweilerhof",
+      "shortName": "KPS",
+      "ass": 90311
+    },
+    {
+      "name": "Am Coloneum",
+      "shortName": "ACM",
+      "ass": 89922
+    },
+    {
+      "name": "Longerich S-Bahn",
+      "shortName": "BFL",
+      "ass": 35821
+    },
+    {
+      "name": "Stommeler Str.",
+      "shortName": "SOM",
+      "ass": 83921
+    },
+    {
+      "name": "Longerich Friedhof",
+      "shortName": "LGR",
+      "ass": 35711
+    },
+    {
+      "name": "Longericher Str.",
+      "shortName": "LGS",
+      "ass": 35611
+    }
+  ],
+  "140": [
+    {
+      "name": "Ebertplatz",
+      "shortName": "EBP",
+      "ass": 3511
+    },
+    {
+      "name": "Ebertplatz/Riehler Str.",
+      "shortName": "EBR",
+      "ass": 65321
+    },
+    {
+      "name": "Reichenspergerplatz",
+      "shortName": "RPP",
+      "ass": 3411
+    },
+    {
+      "name": "Worringer Str.",
+      "shortName": "WRR",
+      "ass": 3721
+    },
+    {
+      "name": "Zoo/Flora",
+      "shortName": "ZOO",
+      "ass": 31311
+    },
+    {
+      "name": "Bodinusstr.",
+      "shortName": "BOD",
+      "ass": 31821
+    },
+    {
+      "name": "Riehler Gürtel",
+      "shortName": "RIG",
+      "ass": 31921
+    },
+    {
+      "name": "Seniorenzentrum Riehl",
+      "shortName": "RHE",
+      "ass": 32021
+    },
+    {
+      "name": "Barbarastr.",
+      "shortName": "BAR",
+      "ass": 64621
+    },
+    {
+      "name": "Pasteurstr.",
+      "shortName": "PAS",
+      "ass": 82221
+    },
+    {
+      "name": "Niehl Betriebshof Nord",
+      "shortName": "RHN",
+      "ass": 35221
+    },
+    {
+      "name": "Neven DuMont Haus",
+      "shortName": "NDH",
+      "ass": 88521
+    },
+    {
+      "name": "Amsterdamer Str./Gürtel",
+      "shortName": "AMG",
+      "ass": 31711
+    },
+    {
+      "name": "Sprengelstr.",
+      "shortName": "SPE",
+      "ass": 81921
+    },
+    {
+      "name": "Xantener Str.",
+      "shortName": "XAN",
+      "ass": 32321
+    },
+    {
+      "name": "Kretzerstr.",
+      "shortName": "KTZ",
+      "ass": 30921
+    },
+    {
+      "name": "Niehler Str.",
+      "shortName": "NST",
+      "ass": 30821
+    },
+    {
+      "name": "Leipziger Platz",
+      "shortName": "LZP",
+      "ass": 30721
+    },
+    {
+      "name": "Nordstr.",
+      "shortName": "NOR",
+      "ass": 30621
+    },
+    {
+      "name": "Neusser Str./Gürtel",
+      "shortName": "NSG",
+      "ass": 30311
+    },
+    {
+      "name": "Grüner Hof",
+      "shortName": "FKN",
+      "ass": 83822
+    },
+    {
+      "name": "Nordfriedhof",
+      "shortName": "NFH",
+      "ass": 33821
+    },
+    {
+      "name": "Nibelungenplatz",
+      "shortName": "NIB",
+      "ass": 33921
+    },
+    {
+      "name": "Schmiedegasse",
+      "shortName": "SDG",
+      "ass": 34021
+    },
+    {
+      "name": "Etzelstr.",
+      "shortName": "MAU",
+      "ass": 34121
+    },
+    {
+      "name": "Longericher Str./Etzelstr.",
+      "shortName": "LET",
+      "ass": 86021
+    },
+    {
+      "name": "Trifelsstr.",
+      "shortName": "TRS",
+      "ass": 78921
+    },
+    {
+      "name": "Mülhauser Str.",
+      "shortName": "MHA",
+      "ass": 77321
+    },
+    {
+      "name": "Am Bilderstöckchen",
+      "shortName": "ABS",
+      "ass": 33221
+    },
+    {
+      "name": "Butzweilerstr.",
+      "shortName": "BZW",
+      "ass": 25021
+    },
+    {
+      "name": "Iltisstr./Äußere Kanalstr.",
+      "shortName": "ILT",
+      "ass": 24911
+    },
+    {
+      "name": "Borsigstr.",
+      "shortName": "BGS",
+      "ass": 25621
+    },
+    {
+      "name": "Rochusplatz",
+      "shortName": "BIK",
+      "ass": 26211
+    },
+    {
+      "name": "Franz-Liszt-Str.",
+      "shortName": "FRL",
+      "ass": 75521
+    },
+    {
+      "name": "Vitalisstr. Nord",
+      "shortName": "VTN",
+      "ass": 65921
+    },
+    {
+      "name": "Müngersdorf Technologiepark S-Bahn",
+      "shortName": "MTP",
+      "ass": 18521
+    },
+    {
+      "name": "Josef-Lammerting-Allee",
+      "shortName": "JLA",
+      "ass": 9121
+    },
+    {
+      "name": "Stolberger Str./Eupener Str.",
+      "shortName": "STO",
+      "ass": 18321
+    },
+    {
+      "name": "Geilenkirchener Str."
+    },
+    {
+      "name": "Stolberger Str.",
+      "shortName": "SBS",
+      "ass": 77821
+    },
+    {
+      "name": "Melatengürtel",
+      "shortName": "OJS",
+      "ass": 18211
+    },
+    {
+      "name": "Aachener Str./Gürtel",
+      "shortName": "ASG",
+      "ass": 17811
+    }
+  ],
+  "142": [
+    {
+      "name": "Ubierring",
+      "shortName": "UBI",
+      "ass": 1711
+    },
+    {
+      "name": "Chlodwigplatz",
+      "shortName": "CWP",
+      "ass": 1811
+    },
+    {
+      "name": "Alteburger Wall"
+    },
+    {
+      "name": "Zugweg",
+      "shortName": "ZGW",
+      "ass": 91421
+    },
+    {
+      "name": "Volksgarten",
+      "shortName": "VOK",
+      "ass": 91321
+    },
+    {
+      "name": "Sibille-Hartmann-Str.",
+      "shortName": "SIB",
+      "ass": 78221
+    },
+    {
+      "name": "Am Vorgebirgstor",
+      "shortName": "AVT",
+      "ass": 87421
+    },
+    {
+      "name": "Pohligstr.",
+      "shortName": "POH",
+      "ass": 5211
+    },
+    {
+      "name": "Justizzentrum",
+      "shortName": "JTZ",
+      "ass": 87521
+    },
+    {
+      "name": "Eifelwall/Stadtarchiv",
+      "shortName": "EFW",
+      "ass": 2611
+    },
+    {
+      "name": "Bf Süd",
+      "shortName": "SBH",
+      "ass": 2521
+    },
+    {
+      "name": "Weißhausstr.",
+      "shortName": "WEH",
+      "ass": 15011
+    },
+    {
+      "name": "Universität",
+      "shortName": "UNI",
+      "ass": 15311
+    },
+    {
+      "name": "Bachemerstr."
+    },
+    {
+      "name": "Universitätsstr.",
+      "shortName": "UNV",
+      "ass": 14311
+    },
+    {
+      "name": "Innere Kanalstr.",
+      "shortName": "IKS",
+      "ass": 75621
+    },
+    {
+      "name": "Mechternstr.",
+      "shortName": "MEC",
+      "ass": 77121
+    },
+    {
+      "name": "Geisselstr.",
+      "shortName": "GES",
+      "ass": 25321
+    },
+    {
+      "name": "Weinsbergstr./Gürtel",
+      "shortName": "MLG",
+      "ass": 25411
+    },
+    {
+      "name": "Venloer Str./Gürtel",
+      "shortName": "VSG",
+      "ass": 25111
+    },
+    {
+      "name": "Bf Ehrenfeld",
+      "shortName": "BFE",
+      "ass": 83521
+    },
+    {
+      "name": "Liebigstr.",
+      "shortName": "LIE",
+      "ass": 23911
+    },
+    {
+      "name": "Schadowstr.",
+      "shortName": "SCA",
+      "ass": 76821
+    },
+    {
+      "name": "Schirmerstr.",
+      "shortName": "SCI",
+      "ass": 77021
+    },
+    {
+      "name": "Pettenkoferstr.",
+      "shortName": "PTT",
+      "ass": 77221
+    },
+    {
+      "name": "Methweg",
+      "shortName": "MET",
+      "ass": 76921
+    },
+    {
+      "name": "Nippes S-Bahn",
+      "shortName": "BFN",
+      "ass": 75022
+    },
+    {
+      "name": "Sechzigstr.",
+      "shortName": "SEC",
+      "ass": 31121
+    },
+    {
+      "name": "Zonser Str.",
+      "shortName": "ZOS",
+      "ass": 83721
+    },
+    {
+      "name": "Merheimer Platz",
+      "shortName": "MHP",
+      "ass": 31221
+    }
+  ],
+  "146": [
+    {
+      "name": "Deckstein",
+      "shortName": "DKS",
+      "ass": 17721
+    },
+    {
+      "name": "Koppensteinstr.",
+      "shortName": "KPP",
+      "ass": 17621
+    },
+    {
+      "name": "Freiligrathstr.",
+      "shortName": "FGS",
+      "ass": 88021
+    },
+    {
+      "name": "Krieler Str.",
+      "shortName": "KRI",
+      "ass": 17521
+    },
+    {
+      "name": "Gleueler Str./Gürtel",
+      "shortName": "GSG",
+      "ass": 17311
+    },
+    {
+      "name": "Leiblplatz",
+      "shortName": "LEI",
+      "ass": 14721
+    },
+    {
+      "name": "Geibelstr.",
+      "shortName": "GEI",
+      "ass": 14621
+    },
+    {
+      "name": "Hildegardis-Krankenhaus",
+      "shortName": "HKH",
+      "ass": 14521
+    },
+    {
+      "name": "Wiso-Fakultät",
+      "shortName": "WFA",
+      "ass": 84621
+    },
+    {
+      "name": "Roonstr.",
+      "shortName": "ROO",
+      "ass": 2921
+    },
+    {
+      "name": "Moltkestr.",
+      "shortName": "MOL",
+      "ass": 2812
+    },
+    {
+      "name": "Rudolfplatz",
+      "shortName": "RDP",
+      "ass": 2711
+    },
+    {
+      "name": "Neumarkt",
+      "shortName": "NEU",
+      "ass": 211
+    }
+  ],
+  "150": [
+    {
+      "name": "Corintostraße"
+    },
+    {
+      "name": "Gummersbacher Straße"
+    },
+    {
+      "name": "Bf Deutz/Messe/Lanxess arena",
+      "shortName": "BDM",
+      "ass": 80211
+    },
+    {
+      "name": "Bf Deutz/Messeplatz",
+      "shortName": "BDP",
+      "ass": 25721
+    },
+    {
+      "name": "Im Rheinpark",
+      "shortName": "IRP",
+      "ass": 5121
+    },
+    {
+      "name": "Thermalbad",
+      "shortName": "TBS",
+      "ass": 80621
+    },
+    {
+      "name": "Auenweg",
+      "shortName": "AUE",
+      "ass": 95921
+    },
+    {
+      "name": "Windmühlenstraße"
+    },
+    {
+      "name": "Danzierstraße"
+    },
+    {
+      "name": "Mülheim Wiener Platz",
+      "shortName": "WPL",
+      "ass": 57011
+    },
+    {
+      "name": "Keupstraße"
+    },
+    {
+      "name": "Schanzenstraße/Schauspielhaus"
+    },
+    {
+      "name": "Schanzenstraße Nord"
+    },
+    {
+      "name": "Carlswerkstraße"
+    },
+    {
+      "name": "Ackerstraße"
+    },
+    {
+      "name": "Bf Mülheim",
+      "shortName": "BFM",
+      "ass": 57211
+    }
+  ],
+  "153": [
+    {
+      "name": "Bf Deutz/Lanxess arena",
+      "shortName": "BDK",
+      "ass": 4911
+    },
+    {
+      "name": "Deutz Technische Hochschule",
+      "shortName": "DZB",
+      "ass": 4411
+    },
+    {
+      "name": "Betzdorfer Str.",
+      "shortName": "BTZ",
+      "ass": 4821
+    },
+    {
+      "name": "Deutzer Ring",
+      "shortName": "DZR",
+      "ass": 49621
+    },
+    {
+      "name": "Feldbergstr.",
+      "shortName": "FBS",
+      "ass": 52521
+    },
+    {
+      "name": "Weilburger Str.",
+      "shortName": "WBU",
+      "ass": 52621
+    },
+    {
+      "name": "Esserstr.",
+      "shortName": "ESS",
+      "ass": 52821
+    },
+    {
+      "name": "Rolshover Str.",
+      "shortName": "RHV",
+      "ass": 43321
+    },
+    {
+      "name": "Lüderichstr.",
+      "shortName": "LDR",
+      "ass": 91921
+    },
+    {
+      "name": "Wiedstr.",
+      "shortName": "WIE",
+      "ass": 65421
+    },
+    {
+      "name": "Gremberg",
+      "shortName": "GBG",
+      "ass": 53021
+    },
+    {
+      "name": "Kürtenstr.",
+      "shortName": "KUE",
+      "ass": 52221
+    },
+    {
+      "name": "Kampgasse",
+      "shortName": "KAM",
+      "ass": 43621
+    },
+    {
+      "name": "Vingst",
+      "shortName": "VGT",
+      "ass": 52111
+    },
+    {
+      "name": "Oranienstr.",
+      "shortName": "ORA",
+      "ass": 52321
+    },
+    {
+      "name": "Würzburger Str.",
+      "shortName": "WUZ",
+      "ass": 52021
+    },
+    {
+      "name": "Fuldaer Str.",
+      "shortName": "FDS",
+      "ass": 51711
+    },
+    {
+      "name": "Mülheimer Friedhof",
+      "shortName": "MHF",
+      "ass": 51921
+    },
+    {
+      "name": "Beuthener Str.",
+      "shortName": "BEU",
+      "ass": 58221
+    },
+    {
+      "name": "Buchheim Frankfurter Str.",
+      "shortName": "BUC",
+      "ass": 57711
+    },
+    {
+      "name": "Bf Mülheim",
+      "shortName": "BFM",
+      "ass": 57211
+    },
+    {
+      "name": "Elisabeth-Breuer-Str.",
+      "shortName": "ELB",
+      "ass": 93421
+    },
+    {
+      "name": "Mülheim Wiener Platz",
+      "shortName": "WPL",
+      "ass": 57011
+    },
+    {
+      "name": "Keupstr.",
+      "shortName": "KEU",
+      "ass": 63111
+    },
+    {
+      "name": "Dünnwalder Str.",
+      "shortName": "DWS",
+      "ass": 63421
+    },
+    {
+      "name": "Von-Lohe-Str.",
+      "shortName": "VLS",
+      "ass": 63521
+    },
+    {
+      "name": "Am Faulbach",
+      "shortName": "AFB",
+      "ass": 63621
+    },
+    {
+      "name": "Moses-Hess-Str.",
+      "shortName": "MOS",
+      "ass": 64021
+    },
+    {
+      "name": "Stammheim S-Bahn",
+      "shortName": "BFS",
+      "ass": 81321
+    },
+    {
+      "name": "Neuer Mülheimer Friedhof",
+      "shortName": "NMF",
+      "ass": 63721
+    }
+  ],
+  "154": [
+    {
+      "name": "Porz Markt",
+      "shortName": "PZM",
+      "ass": 46711
+    },
+    {
+      "name": "Glashüttenstr.",
+      "shortName": "GLA",
+      "ass": 86221
+    },
+    {
+      "name": "Porz Steinstr.",
+      "shortName": "PST",
+      "ass": 46611
+    },
+    {
+      "name": "Stresemannstr.",
+      "shortName": "SSM",
+      "ass": 46521
+    },
+    {
+      "name": "Theodor-Heuss-Str.",
+      "shortName": "THS",
+      "ass": 46421
+    },
+    {
+      "name": "Rudolf-Diesel-Str.",
+      "shortName": "RDI",
+      "ass": 46321
+    },
+    {
+      "name": "Fuggerstr.",
+      "shortName": "HSS",
+      "ass": 46221
+    },
+    {
+      "name": "Maarhäuser Weg",
+      "shortName": "MHW",
+      "ass": 46121
+    },
+    {
+      "name": "Schloss Röttgen",
+      "shortName": "SLR",
+      "ass": 55821
+    },
+    {
+      "name": "Eiler Str.",
+      "shortName": "EST",
+      "ass": 55921
+    },
+    {
+      "name": "Alte Forststr.",
+      "shortName": "AFO",
+      "ass": 56021
+    },
+    {
+      "name": "Königsforst",
+      "shortName": "KGF",
+      "ass": 55711
+    },
+    {
+      "name": "Baldurstr.",
+      "shortName": "BAL",
+      "ass": 56121
+    },
+    {
+      "name": "Erker Mühle",
+      "shortName": "FLB",
+      "ass": 54821
+    },
+    {
+      "name": "Kleinfeldchensweg",
+      "shortName": "KFE",
+      "ass": 54921
+    },
+    {
+      "name": "Bückebergstr.",
+      "shortName": "BCB",
+      "ass": 55021
+    },
+    {
+      "name": "Olpener Str.",
+      "shortName": "OLP",
+      "ass": 55121
+    },
+    {
+      "name": "Brück Mauspfad",
+      "shortName": "BMP",
+      "ass": 54711
+    },
+    {
+      "name": "Im Langen Bruch",
+      "shortName": "ILB",
+      "ass": 55221
+    },
+    {
+      "name": "Ostfriedhof",
+      "shortName": "OSF",
+      "ass": 59821
+    },
+    {
+      "name": "Siedlung Mielenforst",
+      "shortName": "SMI",
+      "ass": 59921
+    },
+    {
+      "name": "Am Leinacker",
+      "shortName": "ALA",
+      "ass": 87721
+    },
+    {
+      "name": "Heinz-Kühn-Str.",
+      "shortName": "HKS",
+      "ass": 87821
+    },
+    {
+      "name": "Roteichenweg",
+      "shortName": "REW",
+      "ass": 87921
+    },
+    {
+      "name": "Thurner Kamp",
+      "shortName": "THK",
+      "ass": 60021
+    },
+    {
+      "name": "Dellbrück Hauptstr.",
+      "shortName": "DHS",
+      "ass": 59511
+    },
+    {
+      "name": "Von-Quadt-Str.",
+      "shortName": "VQS",
+      "ass": 60121
+    },
+    {
+      "name": "Dellbrück S-Bahn",
+      "shortName": "BFD",
+      "ass": 60421
+    },
+    {
+      "name": "Anemonenweg",
+      "shortName": "ANE",
+      "ass": 60321
+    },
+    {
+      "name": "Diepeschrather Str.",
+      "shortName": "DIR",
+      "ass": 60221
+    },
+    {
+      "name": "Kalkweg",
+      "shortName": "KAL",
+      "ass": 62221
+    },
+    {
+      "name": "Wildpark",
+      "shortName": "WIP",
+      "ass": 62321
+    },
+    {
+      "name": "Imbacher Weg",
+      "shortName": "IMB",
+      "ass": 80121
+    },
+    {
+      "name": "Leuchterstr.",
+      "shortName": "LEU",
+      "ass": 60811
+    },
+    {
+      "name": "An der Walkmühle"
+    },
+    {
+      "name": "Im Wirtskamp",
+      "shortName": "IWK",
+      "ass": 79521
+    },
+    {
+      "name": "Dünnwald Waldbad",
+      "shortName": "PBW",
+      "ass": 79421
+    }
+  ]
+}
