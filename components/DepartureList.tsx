@@ -126,7 +126,7 @@ export default function DepartureList({
       </div>
 
       <div 
-        className="bg-surface rounded-lg border border-[var(--border)]"
+        className="bg-surface rounded-lg border border-[var(--border)] p-2"
         role="list"
         aria-label="Abfahrten"
       >
