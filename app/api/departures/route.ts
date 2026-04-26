@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { normalizeStopName } from "@/lib/utils/stopName";
+import { getBerlinDateParts, formatBerlinTime, formatBerlinDate } from "@/lib/utils/berlinTime";
 
 const EFA_BASE_URL = "https://openservice-test.vrr.de/openservice";
 
@@ -13,7 +14,7 @@ export async function GET(request: NextRequest) {
   }
 
   try {
-    const now = new Date();
+    const { year, month, day, hour, minute } = getBerlinDateParts();
 
     // Prefer EFA stopID (from unified search). Fall back to name lookup.
     const useId = stopId && /^de:|^[0-9]{6,}/.test(stopId);
@@ -25,11 +26,11 @@ export async function GET(request: NextRequest) {
       name_dm: useId ? stopId : (stopName || stopId),
       mode: "direct",
       useRealtime: "1",
-      itdDateDay: String(now.getDate()).padStart(2, "0"),
-      itdDateMonth: String(now.getMonth() + 1).padStart(2, "0"),
-      itdDateYear: String(now.getFullYear()),
-      itdTimeHour: String(now.getHours()).padStart(2, "0"),
-      itdTimeMinute: String(now.getMinutes()).padStart(2, "0"),
+      itdDateDay: day,
+      itdDateMonth: month,
+      itdDateYear: year,
+      itdTimeHour: hour,
+      itdTimeMinute: minute,
     });
 
     if (!useId) {
@@ -116,13 +117,13 @@ export async function GET(request: NextRequest) {
           operatorName: transportation.operator?.name,
         },
         dateTime: {
-          date: plannedTime ? new Date(plannedTime).toLocaleDateString("de-DE") : "",
-          time: plannedTime ? new Date(plannedTime).toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" }) : "",
+          date: plannedTime ? formatBerlinDate(plannedTime) : "",
+          time: plannedTime ? formatBerlinTime(plannedTime) : "",
           timestamp: plannedTime ? new Date(plannedTime).getTime() : 0,
         },
         realDateTime: estimatedTime ? {
-          date: new Date(estimatedTime).toLocaleDateString("de-DE"),
-          time: new Date(estimatedTime).toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" }),
+          date: formatBerlinDate(estimatedTime),
+          time: formatBerlinTime(estimatedTime),
           timestamp: new Date(estimatedTime).getTime(),
         } : undefined,
         delay,

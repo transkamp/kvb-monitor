@@ -195,6 +195,7 @@ export default function TripDetailsModal({ departure, currentStopName, onClose, 
     const ts = getScheduledArrivalTimestamp(stopIndex);
     if (ts === null) return "";
     return new Date(ts).toLocaleTimeString("de-DE", {
+      timeZone: "Europe/Berlin",
       hour: "2-digit",
       minute: "2-digit",
     });

@@ -144,6 +144,20 @@ API-Schicht setzt `delay = undefined` bei 0 (= on-time, keine Anzeige).
 
 `lib/storage.ts` migriert einmalig alte KVB-ASS-IDs (Schlüssel: `kvb-favorites-migrated-v2`). Beim Hinzufügen weiterer Migrationen → neuen Versions-Suffix verwenden.
 
+### Zeitzone — IMMER explizit
+
+- EFA-API arbeitet mit lokaler Köln-Zeit (CET/CEST). **Vercel-Server läuft default in UTC** → ohne TZ-explizite Logik sind alle Zeiten 1–2 h verschoben (klassischer „alle Abfahrten als sofort" Bug).
+- **Niemals in API-Routen oder server-rendered Code**:
+  - `new Date().getHours()` / `getMinutes()` / `getDate()`
+  - `toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" })` ohne `timeZone`
+- **Stattdessen** Helper aus `lib/utils/berlinTime.ts` verwenden:
+  ```ts
+  import { getBerlinDateParts, formatBerlinTime, formatBerlinDate } from "@/lib/utils/berlinTime";
+  ```
+- Auch in Client-Components, die Köln-Verkehrsdaten formatieren (z.B. Trip-Modal): `timeZone: "Europe/Berlin"` setzen — sonst sieht ein User in London „13:30" statt „14:30".
+- `vercel.json` setzt zusätzlich `TZ=Europe/Berlin` als Belt-and-Suspenders. Der Code-Fix bleibt aber die Hauptlösung (deploy-target-agnostisch, Edge-Runtime-kompatibel).
+- ISO-Timestamps mit Offset (z.B. `2026-04-26T14:30:00+02:00`) sind unproblematisch — `Date.parse` versteht sie korrekt. Kritisch wird es nur bei `getX()` und `toLocaleX()` ohne TZ.
+
 ---
 
 ## 8. Common Tasks
@@ -204,6 +218,7 @@ API-Schicht setzt `delay = undefined` bei 0 (= on-time, keine Anzeige).
 | EFA-Hints voller statischer WLAN-Hinweise | Filter auf `RTIncidentCall \| Stop \| Line` |
 | Trip-Modal `isPassed` ungenau | Heuristik mit `point.$ === "PATTERN_MAP"` — bekannt unscharf |
 | `ESTIMATED_MINUTES_PER_STOP = 2` hardcoded | Akzeptiert, nicht kritisch |
+| Vercel-Server in UTC → Abfahrten alle „sofort" | `lib/utils/berlinTime.ts` + `vercel.json` mit `TZ=Europe/Berlin` |
 
 ---
 

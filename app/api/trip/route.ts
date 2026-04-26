@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { normalizeStopName } from "@/lib/utils/stopName";
+import { getBerlinDateParts } from "@/lib/utils/berlinTime";
 
 const EFA_BASE_URL = "https://openservice-test.vrr.de/openservice";
 
@@ -13,18 +14,18 @@ export async function GET(request: NextRequest) {
   }
 
   try {
-    const now = new Date();
-    
+    const { year, month, day, hour, minute } = getBerlinDateParts();
+
     const params = new URLSearchParams({
       outputFormat: "rapidJSON",
       version: "10.4.18.18",
       type: "trip",
       tripId: tripId,
-      itdDateDay: String(now.getDate()).padStart(2, "0"),
-      itdDateMonth: String(now.getMonth() + 1).padStart(2, "0"),
-      itdDateYear: String(now.getFullYear()),
-      itdTimeHour: String(now.getHours()).padStart(2, "0"),
-      itdTimeMinute: String(now.getMinutes()).padStart(2, "0"),
+      itdDateDay: day,
+      itdDateMonth: month,
+      itdDateYear: year,
+      itdTimeHour: hour,
+      itdTimeMinute: minute,
       mode: "detail",
     });
 
