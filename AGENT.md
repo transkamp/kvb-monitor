@@ -144,6 +144,19 @@ API-Schicht setzt `delay = undefined` bei 0 (= on-time, keine Anzeige).
 
 `lib/storage.ts` migriert einmalig alte KVB-ASS-IDs (Schlüssel: `kvb-favorites-migrated-v2`). Beim Hinzufügen weiterer Migrationen → neuen Versions-Suffix verwenden.
 
+### Legal Pages & Env-Var-Strategie
+
+Impressum (`app/impressum/page.tsx`) und Datenschutz (`app/datenschutz/page.tsx`) sind Server Components mit `noindex`-Metadaten.
+
+**Persönliche Daten kommen ausschließlich aus Env-Vars** (`IMPRESSUM_NAME`, `IMPRESSUM_ADDRESS_LINE1`, `IMPRESSUM_ADDRESS_LINE2`, `IMPRESSUM_ZIP_CITY`, `IMPRESSUM_EMAIL`) — niemals hardcoded committen. Grund: Repo ist public, Forks/Web-Archive würden private Adressen dauerhaft mitnehmen.
+
+- `lib/legal.ts` ist Single Source of Truth via `getLegalData()`.
+- Helper wirft fail-fast bei fehlenden Vars → kaputte Deploys schlagen klar fehl statt halb-leere Legal-Seiten zu zeigen.
+- Lokal: `.env.local` (gitignored). Production: Vercel Project Settings → Environment Variables.
+- Verlinkt nur im FavoritesOverlay-Footer (Mobile + Desktop), nicht global im Layout — bewusste Streuungs-Reduktion.
+- Die Pages haben `metadata.robots = { index: false, follow: false }` zum Reduzieren von Suchmaschinen-Streuung.
+- Datenschutzerklärung referenziert Vercel-Region Frankfurt (`fra1`) — der Vercel-Project-Setting muss manuell entsprechend gesetzt sein, sonst widerspricht der Text der Realität.
+
 ### PWA & Cache-Strategie
 
 App ist installierbar (manifest + Service Worker). Cache-Strategien in `public/sw.js`:

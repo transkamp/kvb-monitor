@@ -2,6 +2,7 @@
 
 import { Favorite, Stop } from "@/lib/types";
 import { useFavorites } from "@/hooks/useFavorites";
+import Link from "next/link";
 
 interface FavoritesOverlayProps {
   isOpen: boolean;
@@ -87,7 +88,7 @@ export default function FavoritesOverlay({
           )}
         </div>
 
-        <footer className="border-t border-border p-3 text-center">
+        <footer className="border-t border-border p-3 text-center space-y-2">
           <a
             href="https://github.com/transkamp/kvb-monitor"
             target="_blank"
@@ -100,6 +101,23 @@ export default function FavoritesOverlay({
             </svg>
             <span>Quellcode auf GitHub</span>
           </a>
+          <div className="text-xs text-secondary">
+            <Link
+              href="/impressum"
+              onClick={onClose}
+              className="hover:text-primary transition-colors"
+            >
+              Impressum
+            </Link>
+            <span className="mx-2" aria-hidden="true">·</span>
+            <Link
+              href="/datenschutz"
+              onClick={onClose}
+              className="hover:text-primary transition-colors"
+            >
+              Datenschutz
+            </Link>
+          </div>
         </footer>
       </div>
 
@@ -158,7 +176,7 @@ export default function FavoritesOverlay({
           )}
         </div>
 
-        <footer className="border-t border-border p-3 text-center">
+        <footer className="border-t border-border p-3 text-center space-y-2">
           <a
             href="https://github.com/transkamp/kvb-monitor"
             target="_blank"
@@ -171,6 +189,23 @@ export default function FavoritesOverlay({
             </svg>
             <span>Quellcode auf GitHub</span>
           </a>
+          <div className="text-xs text-secondary">
+            <Link
+              href="/impressum"
+              onClick={onClose}
+              className="hover:text-primary transition-colors"
+            >
+              Impressum
+            </Link>
+            <span className="mx-2" aria-hidden="true">·</span>
+            <Link
+              href="/datenschutz"
+              onClick={onClose}
+              className="hover:text-primary transition-colors"
+            >
+              Datenschutz
+            </Link>
+          </div>
         </footer>
       </div>
     </>

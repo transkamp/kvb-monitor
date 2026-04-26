@@ -100,6 +100,25 @@ npm start
 
 Läuft auf jedem Node-18+ Host.
 
+### Self-Hosting & Legal Pages
+
+Wenn du diese App selbst betreibst (eigener Fork, eigener Vercel-Account), musst du **deine eigenen Impressum-Daten** als Environment-Variablen setzen — sie sind bewusst nicht im Repo, damit niemand fremde Adressen forken kann.
+
+Erforderliche Vars (siehe [`.env.example`](./.env.example)):
+
+```
+IMPRESSUM_NAME
+IMPRESSUM_ADDRESS_LINE1
+IMPRESSUM_ADDRESS_LINE2
+IMPRESSUM_ZIP_CITY
+IMPRESSUM_EMAIL
+```
+
+Lokal: in `.env.local` setzen (gitignored).
+Vercel: **Project Settings → Environment Variables** für alle drei Environments.
+
+Ohne diese Vars bricht der Build mit klarer Fehlermeldung ab.
+
 ---
 
 ## 🎨 Design
