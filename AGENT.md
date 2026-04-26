@@ -144,6 +144,23 @@ API-Schicht setzt `delay = undefined` bei 0 (= on-time, keine Anzeige).
 
 `lib/storage.ts` migriert einmalig alte KVB-ASS-IDs (Schlüssel: `kvb-favorites-migrated-v2`). Beim Hinzufügen weiterer Migrationen → neuen Versions-Suffix verwenden.
 
+### PWA & Cache-Strategie
+
+App ist installierbar (manifest + Service Worker). Cache-Strategien in `public/sw.js`:
+
+| Pfad | Strategie | Begründung |
+|---|---|---|
+| `/api/*` | Network-only | Live-Daten dürfen nie stale sein |
+| `/_next/static/*`, `/icons/*`, Favicon | Cache-first | Versionierte/immutable Assets |
+| HTML-Pages (`/`, `/[stopName]`) | Network-first, Cache-Fallback | Frische Page, App-Shell offline |
+| `/sw.js`, `/manifest.webmanifest` | Network-only | Kein Self-Caching |
+
+**Cache-Versioning**: Beim Ändern von `sw.js` oder Cache-Layout `CACHE_VERSION` inkrementieren. `activate`-Event löscht alle alten Caches; `skipWaiting()` + `clients.claim()` aktivieren neuen SW sofort.
+
+**Dev-Mode**: SW wird nur in `NODE_ENV=production` registriert (siehe `components/ServiceWorkerRegistration.tsx`) — verhindert HMR-Konflikte.
+
+**Icon-Generierung**: `node scripts/generate-icons.mjs` (nutzt `sharp` als devDependency). Quelle ist ein simples SVG-Monogramm; ersetze für echtes Branding.
+
 ### Zeitzone — IMMER explizit
 
 - EFA-API arbeitet mit lokaler Köln-Zeit (CET/CEST). **Vercel-Server läuft default in UTC** → ohne TZ-explizite Logik sind alle Zeiten 1–2 h verschoben (klassischer „alle Abfahrten als sofort" Bug).
@@ -227,8 +244,8 @@ API-Schicht setzt `delay = undefined` bei 0 (= on-time, keine Anzeige).
 - Push-Notifications
 - User-Accounts / Cloud-Favoriten / Sync
 - Mehrsprachigkeit (DE only)
-- Offline-Modus für Live-Daten
-- Native-App-Wrapper (PWA reicht)
+- Offline-Modus für Live-Daten (App-Shell ist offline-fähig, Departures bleiben aber online)
+- Native-App-Wrapper (PWA reicht — App ist installierbar)
 - Custom Backend (EFA direkt ist genug)
 
 ---

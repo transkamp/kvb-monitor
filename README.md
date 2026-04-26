@@ -18,6 +18,7 @@ Ein hobbyistisches Side-Project für alle, die einfach nur wissen wollen, wann d
 - 🗺️ **Trip-Details** mit Haltestellen-Liste, Verspätungen pro Stop und Fortschrittsanzeige
 - 🔗 **Teilbare URLs** — `kvb-monitor.app/hansaring`, `kvb-monitor.app/scheibenstr` und so weiter
 - 🌗 **Light / Dark / System** Theme mit FOUC-Prevention
+- 📲 **Installierbar als App** (PWA) — auf Homescreen oder Desktop ablegen
 - ♿ **WCAG-AA** Kontraste, Tastatur-Navigation, ARIA-Labels durchgehend
 - 📱 **Mobile-first**, Swipe-Gesten, voll responsiv
 
