@@ -1,9 +1,11 @@
 "use client";
 
-import { useState, useRef, useCallback, useEffect } from "react";
+import { useState, useRef, useCallback, useEffect, useMemo } from "react";
 import { useRouter } from "next/navigation";
 import { Stop, Departure } from "@/lib/types";
 import { useDepartures } from "@/hooks/useDepartures";
+import { useTransportModeFilter } from "@/hooks/useTransportModeFilter";
+import { TRANSPORT_MODES, TransportMode } from "@/lib/modeFilters";
 import { searchStops } from "@/lib/api";
 import { slugify } from "@/lib/utils/slug";
 import Header from "@/components/Header";
@@ -34,6 +36,17 @@ export default function HomeClient({
   const isInitialMountRef = useRef<boolean>(true);
 
   const { departures, loading, error, lastUpdated, refresh } = useDepartures(currentStop);
+  const { activeModes } = useTransportModeFilter();
+
+  const visibleDepartures = useMemo(() => {
+    if (activeModes.length === 0) return departures;
+    const knownModes = TRANSPORT_MODES as readonly string[];
+    return departures.filter((d) => {
+      const t = d.servingLine.type;
+      if (!knownModes.includes(t)) return true;
+      return activeModes.includes(t as TransportMode);
+    });
+  }, [departures, activeModes]);
 
   // Centralized stop setter with toast feedback + URL sync
   const selectStop = useCallback(
@@ -171,7 +184,7 @@ export default function HomeClient({
 
         {currentStop ? (
           <DepartureList
-            departures={departures}
+            departures={visibleDepartures}
             loading={loading}
             error={error}
             onRefresh={refresh}

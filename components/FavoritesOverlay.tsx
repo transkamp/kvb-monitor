@@ -2,6 +2,7 @@
 
 import { Favorite, Stop } from "@/lib/types";
 import { useFavorites } from "@/hooks/useFavorites";
+import TransportModeFilter from "@/components/TransportModeFilter";
 import Link from "next/link";
 
 interface FavoritesOverlayProps {
@@ -87,6 +88,8 @@ export default function FavoritesOverlay({
             </div>
           )}
         </div>
+
+        <TransportModeFilter />
 
         <footer className="border-t border-border p-3 text-center space-y-2">
           <a
@@ -175,6 +178,8 @@ export default function FavoritesOverlay({
             </div>
           )}
         </div>
+
+        <TransportModeFilter />
 
         <footer className="border-t border-border p-3 text-center space-y-2">
           <a

@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { FavoritesProvider } from "@/contexts/FavoritesContext";
 import { ThemeProvider } from "@/contexts/ThemeContext";
+import { TransportModeFilterProvider } from "@/contexts/TransportModeFilterContext";
 import ServiceWorkerRegistration from "@/components/ServiceWorkerRegistration";
 
 export const metadata: Metadata = {
@@ -61,7 +62,9 @@ export default function RootLayout({
       </head>
       <body className="antialiased">
         <ThemeProvider>
-          <FavoritesProvider>{children}</FavoritesProvider>
+          <FavoritesProvider>
+            <TransportModeFilterProvider>{children}</TransportModeFilterProvider>
+          </FavoritesProvider>
         </ThemeProvider>
         <ServiceWorkerRegistration />
       </body>
