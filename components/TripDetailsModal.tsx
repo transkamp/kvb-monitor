@@ -4,6 +4,7 @@ import { Departure } from "@/lib/types";
 import { TripStop } from "@/lib/types";
 import { useState, useEffect, useRef, useCallback } from "react";
 import { getLineColor } from "@/lib/utils/lineColors";
+import { useDialogA11y } from "@/hooks/useDialogA11y";
 
 interface TripDetailsModalProps {
   departure: Departure;
@@ -40,63 +41,13 @@ export default function TripDetailsModal({ departure, currentStopName, onClose, 
   const navRef = useRef<HTMLElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
   const stopRefs = useRef<(HTMLButtonElement | null)[]>([]);
-  const previouslyFocusedRef = useRef<HTMLElement | null>(null);
 
-  // Save the previously focused element on mount, restore on unmount
-  useEffect(() => {
-    previouslyFocusedRef.current =
-      (document.activeElement as HTMLElement | null) ?? null;
-    return () => {
-      previouslyFocusedRef.current?.focus?.();
-    };
-  }, []);
-
-  // Escape key handler
-  useEffect(() => {
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onClose();
-    };
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, [onClose]);
-
-  // Focus trap - re-evaluates when stops are loaded
-  useEffect(() => {
-    const modal = modalRef.current;
-    if (!modal) return;
-
-    const handleTabKey = (e: KeyboardEvent) => {
-      if (e.key !== "Tab") return;
-
-      // Dynamic query: focusable elements may change after route loads
-      const focusableElements = modal.querySelectorAll<HTMLElement>(
-        'button:not([disabled]), [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
-      );
-      if (focusableElements.length === 0) return;
-
-      const firstElement = focusableElements[0];
-      const lastElement = focusableElements[focusableElements.length - 1];
-
-      if (e.shiftKey) {
-        if (document.activeElement === firstElement) {
-          e.preventDefault();
-          lastElement?.focus();
-        }
-      } else {
-        if (document.activeElement === lastElement) {
-          e.preventDefault();
-          firstElement?.focus();
-        }
-      }
-    };
-
-    modal.addEventListener("keydown", handleTabKey);
-    closeButtonRef.current?.focus();
-
-    return () => {
-      modal.removeEventListener("keydown", handleTabKey);
-    };
-  }, [routeStops, loading]);
+  useDialogA11y({
+    isOpen: true,
+    panelRef: modalRef,
+    onClose,
+    initialFocusRef: closeButtonRef,
+  });
 
   // Keyboard navigation through stops (using refs, not getElementById)
   const handleKeyDown = useCallback((e: React.KeyboardEvent) => {

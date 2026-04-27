@@ -2,9 +2,10 @@
 
 import { Stop } from "@/lib/types";
 import { useFavorites } from "@/hooks/useFavorites";
+import { useDialogA11y } from "@/hooks/useDialogA11y";
 import TransportModeFilter from "@/components/TransportModeFilter";
 import Link from "next/link";
-import { useEffect, useId, useRef } from "react";
+import { useId, useRef } from "react";
 
 interface FavoritesOverlayProps {
   isOpen: boolean;
@@ -23,52 +24,13 @@ export default function FavoritesOverlay({
   const headingId = `favorites-heading-${useId()}`;
   const panelRef = useRef<HTMLDivElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
-  const previouslyFocusedRef = useRef<HTMLElement | null>(null);
+
+  useDialogA11y({ isOpen, panelRef, onClose, initialFocusRef: closeButtonRef });
 
   const handleSelect = (stop: Stop) => {
     onSelect(stop);
     onClose();
   };
-
-  useEffect(() => {
-    if (!isOpen) return;
-
-    previouslyFocusedRef.current =
-      (document.activeElement as HTMLElement | null) ?? null;
-    closeButtonRef.current?.focus();
-
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") {
-        e.stopPropagation();
-        onClose();
-        return;
-      }
-      if (e.key !== "Tab") return;
-
-      const panel = panelRef.current;
-      if (!panel) return;
-      const focusables = panel.querySelectorAll<HTMLElement>(
-        'button:not([disabled]), [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
-      );
-      if (focusables.length === 0) return;
-      const first = focusables[0];
-      const last = focusables[focusables.length - 1];
-
-      if (e.shiftKey && document.activeElement === first) {
-        e.preventDefault();
-        last.focus();
-      } else if (!e.shiftKey && document.activeElement === last) {
-        e.preventDefault();
-        first.focus();
-      }
-    };
-
-    window.addEventListener("keydown", onKey);
-    return () => {
-      window.removeEventListener("keydown", onKey);
-      previouslyFocusedRef.current?.focus?.();
-    };
-  }, [isOpen, onClose]);
 
   return (
     <>
