@@ -38,22 +38,21 @@ export default function HomeClient({
   // Centralized stop setter with toast feedback + URL sync
   const selectStop = useCallback(
     (stop: Stop) => {
-      setCurrentStop((prev) => {
-        if (prev && prev.id === stop.id) {
-          return prev;
-        }
-        if (!isInitialMountRef.current) {
-          setToastMessage(`${stop.name} ausgewählt`);
-        }
-        // Sync URL
-        const slug = slugify(stop.name);
-        if (slug) {
-          router.replace(`/${slug}`, { scroll: false });
-        }
-        return stop;
-      });
+      if (currentStop?.id === stop.id) return;
+
+      if (!isInitialMountRef.current) {
+        setToastMessage(`${stop.name} ausgewählt`);
+      }
+
+      // Sync URL
+      const slug = slugify(stop.name);
+      if (slug) {
+        router.replace(`/${slug}`, { scroll: false });
+      }
+
+      setCurrentStop(stop);
     },
-    [router]
+    [router, currentStop]
   );
 
   // Initial load from favorites — only if no initialStop and not suppressed

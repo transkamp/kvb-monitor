@@ -50,7 +50,7 @@ node scripts/fetch-routes.mjs
 ## 🛠️ Tech Stack
 
 - **Next.js 16** (App Router, React Server Components)
-- **React 19** + **TypeScript** (strict)
+- **React 18** + **TypeScript** (strict)
 - **TailwindCSS 3** mit CSS-Variablen für Theming
 - **VRR EFA** (`XML_STOPFINDER_REQUEST`, `XML_DM_REQUEST`, `XML_TRIP_REQUEST2`)
 - **KVB OpenData** (für statische Routen-Anreicherung)
@@ -168,7 +168,7 @@ Die angezeigten Daten kommen direkt von VRR/KVB und werden nicht modifiziert —
 
 ## 🤝 Mitwirken
 
-Issues und PRs willkommen. Für AI-Coding-Agents (Claude Code, Cursor, OpenCode, Copilot Workspace) gibt es eine eigene Spezifikation in [`AGENT.md`](./AGENT.md) mit Konventionen, Pitfalls und Architektur-Notizen.
+Issues und PRs willkommen. Für AI-Coding-Agents (Claude Code, Cursor, OpenCode, Copilot Workspace) gibt es eine eigene Spezifikation in [`AGENTS.md`](./AGENTS.md) mit Konventionen, Pitfalls und Architektur-Notizen.
 
 ---
 

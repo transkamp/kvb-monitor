@@ -1,4 +1,4 @@
-# AGENT.md
+# AGENTS.md
 
 Spezifikation für AI-Coding-Agents (Claude Code, Cursor, OpenCode, Copilot Workspace, etc.). Kurz, faktisch, beschreibt **wie** in diesem Repo gearbeitet wird.
 
@@ -14,12 +14,12 @@ Spezifikation für AI-Coding-Agents (Claude Code, Cursor, OpenCode, Copilot Work
 
 ## 2. Tech Stack
 
-- Next.js **16.x** (App Router, RSC)
-- React **19**
-- TypeScript **5** (strict)
+- Next.js **16.x** (App Router, RSC) — siehe `package.json`
+- React **18.3** (nicht 19 — package.json ist Source of Truth)
+- TypeScript **5** strict, Pfad-Alias `@/*` → Repo-Root
 - TailwindCSS **3** (`darkMode: "class"`, alle Farben via CSS-Variablen)
-- Node **18+** (für `fetch` ohne Polyfill)
-- Keine zusätzlichen UI-Libraries, keine State-Manager, keine Form-Libs
+- Keine zusätzlichen UI-Libraries, keine State-Manager, keine Form-Libs — bewusst minimal, nicht hinzufügen ohne triftigen Grund
+- Scripts: nur `dev`, `build`, `start`, `lint`. Kein `test` (keine Unit-Tests vorhanden)
 
 ---
 
