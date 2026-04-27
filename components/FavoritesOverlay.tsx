@@ -48,6 +48,10 @@ export default function FavoritesOverlay({
         aria-modal="true"
         aria-labelledby={headingId}
         aria-hidden={!isOpen}
+        style={{
+          paddingTop: "env(safe-area-inset-top)",
+          paddingBottom: "env(safe-area-inset-bottom)",
+        }}
         className={`fixed top-0 right-0 h-full w-[280px] bg-surface z-50 flex flex-col md:border-l md:border-border transform transition-transform duration-300 ease-out ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}

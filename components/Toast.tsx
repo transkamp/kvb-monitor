@@ -39,8 +39,9 @@ export default function Toast({
       role="status"
       aria-live="polite"
       aria-atomic="true"
+      style={{ bottom: "calc(1.5rem + env(safe-area-inset-bottom))" }}
       className={`
-        fixed bottom-6 left-1/2 -translate-x-1/2 z-50
+        fixed left-1/2 -translate-x-1/2 z-50
         flex items-center gap-2
         px-4 py-3 rounded-lg shadow-lg
         bg-[var(--primary)] text-[var(--background)]

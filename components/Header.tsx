@@ -22,7 +22,10 @@ export default function Header({ onMenuClick, currentStop }: HeaderProps) {
       : "Hell";
 
   return (
-    <header className="sticky top-0 z-30 bg-background border-b border-border">
+    <header
+      className="sticky top-0 z-30 bg-background border-b border-border"
+      style={{ paddingTop: "env(safe-area-inset-top)" }}
+    >
       <div className="max-w-xl mx-auto px-4 py-3">
         <div className="flex items-center justify-between gap-1">
           <button
