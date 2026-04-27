@@ -48,6 +48,17 @@ export function canonicalize(name: string | undefined | null): string {
 
 let canonicalSet: Set<string> | null = null;
 
+/**
+ * Known EFA-vs-KVB-OpenData naming aliases. EFA uses different abbreviations
+ * for some long-form names that appear in `kvb-routes.json`. We seed the
+ * whitelist with both spellings so the lookup matches whichever variant
+ * EFA returns. Keep this list short and add only when a real mismatch is
+ * observed in production.
+ */
+const NAME_ALIASES: ReadonlyArray<readonly [string, string]> = [
+  ["Bonn Hauptbahnhof", "Bonn Hbf"],
+];
+
 function getCanonicalSet(): Set<string> {
   if (canonicalSet) return canonicalSet;
   const set = new Set<string>();
@@ -57,6 +68,12 @@ function getCanonicalSet(): Set<string> {
       const key = canonicalize(stop.name);
       if (key) set.add(key);
     }
+  }
+  for (const [a, b] of NAME_ALIASES) {
+    const ka = canonicalize(a);
+    const kb = canonicalize(b);
+    if (set.has(ka)) set.add(kb);
+    if (set.has(kb)) set.add(ka);
   }
   canonicalSet = set;
   return set;

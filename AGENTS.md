@@ -241,6 +241,7 @@ App ist installierbar (manifest + Service Worker). Cache-Strategien in `public/s
 |---|---|
 | `parent.name === "Köln"`-Filter dropped Type-A-Records | ID-Prefix-Filter `de:05315:` |
 | Strikter `de:05315:`-Filter dropped KVB-bediente Nachbarort-Stops (Efferen/Bensberg/Brühl/Frechen/Bonn Hbf) | Whitelist via `lib/utils/kvbStops.ts` (canonical-key Set aus `kvb-routes.json`) — bei Filter-Änderungen beibehalten |
+| Reine Namens-Whitelist matchte gleichnamige Stops bundesweit (Aachen Scheibenstraße, Scheibenhardt Rathaus, Konstanz Ebertplatz …) | Whitelist nur in Kombination mit `KVB_NEIGHBOR_PREFIXES` (Rhein-Erft, Rhein.-Berg., Rhein-Sieg, Bonn) — Municipality-Prefix als geografischer Anker |
 | `{0}{0}` rendert als „00" in JSX | `value !== undefined &&` statt `value &&` |
 | Doppelte Departures (gleiche IDs) → React-Key-Warnings | Composite-Key: `${tripId}-${number}-${plannedTime}-${idx}` |
 | FOUC beim Theme-Wechsel | Inline-Script vor `<body>` |

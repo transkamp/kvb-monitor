@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { normalizeStopName, isKoelnStop } from "@/lib/utils/stopName";
+import { normalizeStopName, isKoelnStop, isKvbNeighborStop } from "@/lib/utils/stopName";
 import { isKvbServedStop } from "@/lib/utils/kvbStops";
 
 const EFA_BASE_URL = "https://openservice-test.vrr.de/openservice";
@@ -44,10 +44,12 @@ export async function GET(request: NextRequest) {
 
     // Filter to KVB-served territory.
     // - Köln stops via EFA municipality code (de:05315:*) — fast prefix check.
-    // - Plus stops in neighboring municipalities (Hürth, Brühl, Bergisch Gladbach,
-    //   Frechen, Bornheim, Alfter, Bonn) that are actually served by a KVB
-    //   Stadtbahn line (whitelist from lib/data/kvb-routes.json).
-    // Both checks are O(1); name normalization runs once per record.
+    // - Plus stops in KVB-neighboring districts (Rhein-Erft, Rheinisch-Bergisch,
+    //   Rhein-Sieg, Bonn) that are *also* on a KVB line (whitelist from
+    //   lib/data/kvb-routes.json). The municipality prefix anchors the
+    //   whitelist match to the right geography — without it, generic stop
+    //   names like "Rathaus" or "Scheibenstraße" would leak in from anywhere
+    //   in Germany. Both checks are O(1).
     const kvbLocations = locations.filter((loc) => loc.type === "stop");
 
     // Normalize names and dedupe
@@ -56,7 +58,10 @@ export async function GET(request: NextRequest) {
     for (const loc of kvbLocations) {
       const cleanName = normalizeStopName(loc.disassembledName || loc.name);
       if (!cleanName) continue;
-      if (!isKoelnStop(loc.id) && !isKvbServedStop(cleanName)) continue;
+      const allow =
+        isKoelnStop(loc.id) ||
+        (isKvbNeighborStop(loc.id) && isKvbServedStop(cleanName));
+      if (!allow) continue;
 
       // Dedupe by normalized name; keep the entry with highest matchQuality
       const key = cleanName.toLowerCase();
