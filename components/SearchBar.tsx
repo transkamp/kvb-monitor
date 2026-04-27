@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect, KeyboardEvent } from "react";
+import { useState, useRef, useEffect, useId, KeyboardEvent } from "react";
 import { Stop } from "@/lib/types";
 import { searchStops } from "@/lib/api";
 
@@ -10,6 +10,10 @@ interface SearchBarProps {
 }
 
 export default function SearchBar({ onSelect, placeholder = "Haltestelle suchen..." }: SearchBarProps) {
+  const reactId = useId();
+  const inputId = `stop-search-${reactId}`;
+  const listboxId = `stop-search-listbox-${reactId}`;
+  const optionId = (i: number) => `stop-search-option-${reactId}-${i}`;
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<Stop[]>([]);
   const [isSearching, setIsSearching] = useState(false);
@@ -74,11 +78,17 @@ export default function SearchBar({ onSelect, placeholder = "Haltestelle suchen.
     setTimeout(() => setShowResults(false), 200);
   };
 
+  const expanded = showResults && results.length > 0;
+
   return (
     <div className="relative w-full">
+      <label htmlFor={inputId} className="sr-only">
+        Haltestelle suchen
+      </label>
       <div className="relative">
         <input
           ref={inputRef}
+          id={inputId}
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
@@ -87,23 +97,37 @@ export default function SearchBar({ onSelect, placeholder = "Haltestelle suchen.
           onBlur={handleBlur}
           placeholder={placeholder}
           autoComplete="off"
+          role="combobox"
+          aria-autocomplete="list"
+          aria-expanded={expanded}
+          aria-controls={listboxId}
+          aria-activedescendant={
+            expanded && selectedIndex >= 0 ? optionId(selectedIndex) : undefined
+          }
+          aria-busy={isSearching}
           className="w-full px-4 py-3 bg-surface border border-border rounded-lg text-primary placeholder:text-secondary focus:border-accent transition-colors"
         />
         {isSearching && (
-          <div className="absolute right-4 top-1/2 -translate-y-1/2">
+          <div className="absolute right-4 top-1/2 -translate-y-1/2" aria-hidden="true">
             <div className="w-4 h-4 border-2 border-accent border-t-transparent rounded-full animate-spin" />
           </div>
         )}
       </div>
 
-      {showResults && results.length > 0 && (
+      {expanded && (
         <div
           ref={resultsRef}
+          id={listboxId}
+          role="listbox"
+          aria-label="Haltestellen-Vorschläge"
           className="absolute z-50 w-full mt-2 bg-surface border border-border rounded-lg shadow-lg overflow-hidden"
         >
           {results.map((stop, index) => (
             <button
               key={stop.id}
+              id={optionId(index)}
+              role="option"
+              aria-selected={index === selectedIndex}
               onClick={() => handleSelect(stop)}
               className={`w-full px-4 py-3 text-left transition-colors touch-optimized ${
                 index === selectedIndex ? "bg-accent text-[var(--background)]" : "hover:bg-background"

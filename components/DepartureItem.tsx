@@ -59,27 +59,19 @@ const DepartureItem = forwardRef<HTMLButtonElement, DepartureItemProps>(
       .filter(Boolean)
       .join(", ");
 
-    const containerClass = `
-      w-full flex items-center gap-4 py-4 border-b border-[var(--border)] last:border-b-0
-      transition-colors text-left relative
+    const liClass = `
+      relative w-full flex flex-wrap items-center gap-4 py-4 border-b border-[var(--border)] last:border-b-0
+      transition-colors
       ${
         isActive
           ? "bg-[var(--accent)]/10 ring-2 ring-[var(--accent)] ring-inset"
-          : "hover:bg-[var(--surface-hover)] focus:bg-[var(--surface-hover)]"
+          : "hover:bg-[var(--surface-hover)] focus-within:bg-[var(--surface-hover)]"
       }
       ${isCancelled ? "opacity-70" : ""}
     `;
 
     return (
-      <button
-        ref={ref}
-        tabIndex={tabIndex ?? 0}
-        onClick={() => onClick?.(departure)}
-        aria-label={a11yLabel}
-        aria-disabled={isCancelled || undefined}
-        role="listitem"
-        className={containerClass}
-      >
+      <li className={liClass}>
         {/* Line badge */}
         <div
           className={`flex-shrink-0 w-14 h-14 rounded-lg flex items-center justify-center font-bold text-lg text-white ${
@@ -92,7 +84,7 @@ const DepartureItem = forwardRef<HTMLButtonElement, DepartureItemProps>(
         </div>
 
         {/* Destination */}
-        <div className="flex-grow min-w-0">
+        <div className="flex-grow min-w-0" aria-hidden="true">
           <div
             className={`font-medium text-[var(--primary)] truncate flex items-center gap-2 ${
               isCancelled ? "line-through" : ""
@@ -100,58 +92,22 @@ const DepartureItem = forwardRef<HTMLButtonElement, DepartureItemProps>(
           >
             <span className="truncate">→ {servingLine.destination || servingLine.direction}</span>
 
-            {/* Status badges next to destination */}
             {isExtra && (
-              <span
-                className="flex-shrink-0 text-[10px] uppercase tracking-wider font-semibold px-1.5 py-0.5 rounded bg-[var(--success)] text-[var(--background)]"
-                aria-hidden="true"
-              >
+              <span className="flex-shrink-0 text-[10px] uppercase tracking-wider font-semibold px-1.5 py-0.5 rounded bg-[var(--success)] text-[var(--background)]">
                 Sonderfahrt
               </span>
             )}
             {isStopCancelled && !isCancelled && (
-              <span
-                className="flex-shrink-0 text-[10px] uppercase tracking-wider font-semibold px-1.5 py-0.5 rounded bg-[var(--warning)] text-[var(--background)]"
-                aria-hidden="true"
-              >
+              <span className="flex-shrink-0 text-[10px] uppercase tracking-wider font-semibold px-1.5 py-0.5 rounded bg-[var(--warning)] text-[var(--background)]">
                 Hält nicht
-              </span>
-            )}
-
-            {/* Hints icon */}
-            {hints && hints.length > 0 && (
-              <span
-                role="button"
-                tabIndex={0}
-                aria-label={`${hints.length} Hinweise anzeigen`}
-                aria-expanded={showHints}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setShowHints((v) => !v);
-                }}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter" || e.key === " ") {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    setShowHints((v) => !v);
-                  }
-                }}
-                className="flex-shrink-0 inline-flex items-center justify-center w-5 h-5 rounded-full bg-[var(--surface-hover)] text-[var(--secondary)] hover:bg-[var(--accent)] hover:text-[var(--background)] transition-colors text-xs cursor-pointer"
-                title="Hinweise"
-              >
-                <span aria-hidden="true">i</span>
               </span>
             )}
           </div>
 
           <div className="flex items-center gap-2 mt-0.5">
-            {/* Live indicator */}
             {isLive && (
               <span className="inline-flex items-center gap-1 text-xs text-[var(--success)]">
-                <span
-                  className="live-dot inline-block w-2 h-2 rounded-full bg-[var(--success)]"
-                  aria-hidden="true"
-                />
+                <span className="live-dot inline-block w-2 h-2 rounded-full bg-[var(--success)]" />
                 <span>Live</span>
               </span>
             )}
@@ -164,26 +120,10 @@ const DepartureItem = forwardRef<HTMLButtonElement, DepartureItemProps>(
               </span>
             )}
           </div>
-
-          {/* Hint details (expandable) */}
-          {showHints && hints && hints.length > 0 && (
-            <div
-              role="region"
-              aria-label="Live-Hinweise"
-              className="mt-2 p-2 rounded bg-[var(--surface-muted)] border border-[var(--border)] text-xs text-[var(--primary)] space-y-1"
-              onClick={(e) => e.stopPropagation()}
-            >
-              {hints.map((h, i) => (
-                <div key={i} className="leading-snug">
-                  {h.content}
-                </div>
-              ))}
-            </div>
-          )}
         </div>
 
         {/* Time display */}
-        <div className="flex-shrink-0 text-right">
+        <div className="flex-shrink-0 text-right" aria-hidden="true">
           {isCancelled ? (
             <div className="text-lg font-bold text-[var(--warning)]">Entfällt</div>
           ) : timeInMinutes <= 1 ? (
@@ -209,7 +149,49 @@ const DepartureItem = forwardRef<HTMLButtonElement, DepartureItemProps>(
             <div className="text-sm text-[var(--success)]">{delay} Min früher</div>
           )}
         </div>
-      </button>
+
+        {/* Primary clickable area covers entire li via ::before pseudo-element */}
+        <button
+          ref={ref}
+          type="button"
+          tabIndex={tabIndex ?? 0}
+          onClick={() => onClick?.(departure)}
+          aria-label={a11yLabel}
+          disabled={isCancelled}
+          className="absolute inset-0 w-full h-full bg-transparent border-0 p-0 m-0 cursor-pointer disabled:cursor-not-allowed focus:outline-none rounded-md"
+        >
+          <span className="sr-only">{a11yLabel}</span>
+        </button>
+
+        {/* Hint button — sibling, raised above the primary overlay */}
+        {hints && hints.length > 0 && (
+          <button
+            type="button"
+            aria-label={`${hints.length} Hinweise anzeigen`}
+            aria-expanded={showHints}
+            onClick={() => setShowHints((v) => !v)}
+            className="relative z-10 flex-shrink-0 inline-flex items-center justify-center w-6 h-6 rounded-full bg-[var(--surface-hover)] text-[var(--secondary)] hover:bg-[var(--accent)] hover:text-[var(--background)] transition-colors text-xs"
+            title="Hinweise"
+          >
+            <span aria-hidden="true">i</span>
+          </button>
+        )}
+
+        {/* Hint details (expandable) — sibling, raised above the primary overlay */}
+        {showHints && hints && hints.length > 0 && (
+          <div
+            role="region"
+            aria-label="Live-Hinweise"
+            className="relative z-10 basis-full mt-2 p-2 rounded bg-[var(--surface-muted)] border border-[var(--border)] text-xs text-[var(--primary)] space-y-1"
+          >
+            {hints.map((h, i) => (
+              <div key={i} className="leading-snug">
+                {h.content}
+              </div>
+            ))}
+          </div>
+        )}
+      </li>
     );
   }
 );

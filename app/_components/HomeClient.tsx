@@ -175,9 +175,13 @@ export default function HomeClient({
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
     >
+      <a href="#main-content" className="skip-link">
+        Zum Hauptinhalt springen
+      </a>
+
       <Header onMenuClick={handleMenuClick} currentStop={currentStop} />
 
-      <main className="max-w-xl mx-auto px-4 py-6">
+      <main id="main-content" className="max-w-xl mx-auto px-4 py-6">
         <div className="mb-6">
           <SearchBar onSelect={handleStopSelect} />
         </div>

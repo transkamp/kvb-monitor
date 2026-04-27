@@ -69,15 +69,23 @@ export default function DepartureList({
 
   if (loading && departures.length === 0) {
     return (
-      <div className="flex items-center justify-center py-12">
-        <div className="w-8 h-8 border-3 border-[var(--accent)] border-t-transparent rounded-full animate-spin" />
+      <div
+        className="flex items-center justify-center py-12"
+        role="status"
+        aria-live="polite"
+      >
+        <div
+          className="w-8 h-8 border-3 border-[var(--accent)] border-t-transparent rounded-full animate-spin"
+          aria-hidden="true"
+        />
+        <span className="sr-only">Lade Abfahrten</span>
       </div>
     );
   }
 
   if (error) {
     return (
-      <div className="text-center py-12">
+      <div className="text-center py-12" role="alert">
         <div className="text-[var(--secondary)] mb-4">{error}</div>
         <button
           onClick={onRefresh}
@@ -112,7 +120,7 @@ export default function DepartureList({
         <button
           onClick={onRefresh}
           disabled={loading}
-          className="p-2 hover:bg-[var(--surface-hover)] rounded-lg transition-colors disabled:opacity-50"
+          className="p-2 hover:bg-[var(--surface-hover)] rounded-lg transition-colors disabled:cursor-not-allowed"
           title="Aktualisieren"
           aria-label="Liste aktualisieren"
         >
@@ -121,21 +129,21 @@ export default function DepartureList({
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
+            aria-hidden="true"
           >
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
           </svg>
         </button>
       </div>
 
-      <div 
-        className="bg-surface rounded-lg border border-[var(--border)] p-2"
-        role="list"
+      <ul
+        className="bg-surface rounded-lg border border-[var(--border)] p-2 list-none"
         aria-label="Abfahrten"
       >
         {departures.map((departure, index) => (
-          <DepartureItem 
-            key={`${departure.id}-${index}`} 
-            departure={departure} 
+          <DepartureItem
+            key={`${departure.id}-${index}`}
+            departure={departure}
             onClick={onDepartureClick}
             ref={(el) => { itemRefs.current[index] = el; }}
             isActive={index === activeIndex}
@@ -146,7 +154,7 @@ export default function DepartureList({
             }
           />
         ))}
-      </div>
+      </ul>
       
       <div className="text-center mt-4">
         <p className="text-xs text-[var(--secondary)]" aria-hidden="true">

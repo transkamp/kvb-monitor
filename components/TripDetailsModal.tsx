@@ -40,6 +40,16 @@ export default function TripDetailsModal({ departure, currentStopName, onClose, 
   const navRef = useRef<HTMLElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
   const stopRefs = useRef<(HTMLButtonElement | null)[]>([]);
+  const previouslyFocusedRef = useRef<HTMLElement | null>(null);
+
+  // Save the previously focused element on mount, restore on unmount
+  useEffect(() => {
+    previouslyFocusedRef.current =
+      (document.activeElement as HTMLElement | null) ?? null;
+    return () => {
+      previouslyFocusedRef.current?.focus?.();
+    };
+  }, []);
 
   // Escape key handler
   useEffect(() => {
