@@ -79,7 +79,7 @@ User → SearchBar → /api/stops          (EFA XML_STOPFINDER_REQUEST)
 
 | Route | Quelle | Returns |
 |---|---|---|
-| `GET /api/stops?q=…` | EFA STOPFINDER | `{ stops: Stop[] }` (max 20, Köln-only, dedupe by normalized name) |
+| `GET /api/stops?q=…` | EFA STOPFINDER | `{ stops: Stop[] }` (max 20, Köln + KVB-bediente Nachbarorte via Whitelist aus `kvb-routes.json`, dedupe by normalized name) |
 | `GET /api/departures?stopId=…` oder `?name=…` | EFA DM | `{ departures: Departure[] }` |
 | `GET /api/trip?tripId=…` | EFA TRIP | `{ stops: TripStop[] }` |
 | `GET /api/route?lineId=…` | `lib/data/kvb-routes.json` | `{ stops: string[] }` |
@@ -240,6 +240,7 @@ App ist installierbar (manifest + Service Worker). Cache-Strategien in `public/s
 | Pitfall | Lösung |
 |---|---|
 | `parent.name === "Köln"`-Filter dropped Type-A-Records | ID-Prefix-Filter `de:05315:` |
+| Strikter `de:05315:`-Filter dropped KVB-bediente Nachbarort-Stops (Efferen/Bensberg/Brühl/Frechen/Bonn Hbf) | Whitelist via `lib/utils/kvbStops.ts` (canonical-key Set aus `kvb-routes.json`) — bei Filter-Änderungen beibehalten |
 | `{0}{0}` rendert als „00" in JSX | `value !== undefined &&` statt `value &&` |
 | Doppelte Departures (gleiche IDs) → React-Key-Warnings | Composite-Key: `${tripId}-${number}-${plannedTime}-${idx}` |
 | FOUC beim Theme-Wechsel | Inline-Script vor `<body>` |
