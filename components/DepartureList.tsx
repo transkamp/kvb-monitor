@@ -2,6 +2,7 @@
 
 import { Departure } from "@/lib/types";
 import DepartureItem from "./DepartureItem";
+import EmptyDeparturesIllustration from "./EmptyDeparturesIllustration";
 import { useState, useRef, useEffect, useCallback } from "react";
 
 interface DepartureListProps {
@@ -90,8 +91,9 @@ export default function DepartureList({
 
   if (departures.length === 0) {
     return (
-      <div className="text-center py-12">
-        <div className="text-[var(--secondary)]">Keine Abfahrten gefunden</div>
+      <div className="text-center py-12 flex flex-col items-center">
+        <EmptyDeparturesIllustration />
+        <div className="mt-3 text-[var(--secondary)]">Keine Abfahrten gefunden</div>
       </div>
     );
   }
