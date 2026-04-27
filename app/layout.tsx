@@ -12,17 +12,19 @@ export const metadata: Metadata = {
   applicationName: "KVB Monitor",
   appleWebApp: {
     capable: true,
-    statusBarStyle: "default",
-    title: "KVB Monitor",
+    statusBarStyle: "black-translucent",
+    title: "KVB",
   },
   icons: {
     icon: [
-      { url: "/favicon.png", type: "image/png", sizes: "32x32" },
-      { url: "/icons/icon-192.png", type: "image/png", sizes: "192x192" },
-      { url: "/icons/icon-512.png", type: "image/png", sizes: "512x512" },
+      { url: "/icons/favicon.svg", type: "image/svg+xml" },
+      { url: "/icons/favicon-32.png", type: "image/png", sizes: "32x32" },
+      { url: "/icons/favicon-16.png", type: "image/png", sizes: "16x16" },
     ],
     apple: [
       { url: "/icons/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+      { url: "/icons/apple-touch-icon-152.png", sizes: "152x152", type: "image/png" },
+      { url: "/icons/apple-touch-icon-167.png", sizes: "167x167", type: "image/png" },
     ],
   },
 };
@@ -33,7 +35,7 @@ export const viewport: Viewport = {
   viewportFit: "cover",
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#FAFAFA" },
-    { media: "(prefers-color-scheme: dark)", color: "#0F1115" },
+    { media: "(prefers-color-scheme: dark)", color: "#1A1A1A" },
   ],
 };
 

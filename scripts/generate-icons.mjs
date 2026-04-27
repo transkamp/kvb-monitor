@@ -1,48 +1,56 @@
 /**
- * One-shot icon generator for the PWA.
+ * Re-renders all PNG icons from the SVG masters in public/icons/.
  *
- * Generates simple placeholder icons: blue accent background with white "KVB"
- * monogram. Run once with `node scripts/generate-icons.mjs`.
+ * Sources (edit these to change branding):
+ *   public/icons/icon-master.svg   — main app icon (rounded square bg)
+ *   public/icons/icon-maskable.svg — Android adaptive icon (full-bleed bg)
+ *   public/icons/favicon.svg       — small-size simplified version
  *
- * After generation, sharp can be removed from devDependencies if desired.
+ * Run with `node scripts/generate-icons.mjs` after editing any SVG.
  */
 
 import sharp from "sharp";
-import { mkdir } from "fs/promises";
+import { readFile } from "fs/promises";
 import { join } from "path";
 
-const OUT_DIR = join(process.cwd(), "public", "icons");
-await mkdir(OUT_DIR, { recursive: true });
+const ICONS_DIR = join(process.cwd(), "public", "icons");
 
-const ACCENT = "#2563EB";
-const TEXT = "#FFFFFF";
+const masterSvg = await readFile(join(ICONS_DIR, "icon-master.svg"));
+const maskableSvg = await readFile(join(ICONS_DIR, "icon-maskable.svg"));
+const faviconSvg = await readFile(join(ICONS_DIR, "favicon.svg"));
 
-function svgIcon(size, { padding = 0, bg = ACCENT } = {}) {
-  const fontSize = Math.round(size * 0.32);
-  const inner = size - padding * 2;
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">
-  <rect x="${padding}" y="${padding}" width="${inner}" height="${inner}" rx="${Math.round(inner * 0.18)}" fill="${bg}"/>
-  <text x="50%" y="50%" font-family="-apple-system, system-ui, sans-serif" font-size="${fontSize}" font-weight="700" fill="${TEXT}" text-anchor="middle" dominant-baseline="central" letter-spacing="-1">KVB</text>
-</svg>`;
-}
-
-const targets = [
-  { name: "icon-192.png", size: 192, padding: 0 },
-  { name: "icon-512.png", size: 512, padding: 0 },
-  // Maskable: safe zone is inner 80%, so add 10% padding via inner box.
-  { name: "icon-maskable-512.png", size: 512, padding: 52 },
-  { name: "apple-touch-icon.png", size: 180, padding: 0 },
+const masterTargets = [
+  { name: "icon-96.png", size: 96 },
+  { name: "icon-144.png", size: 144 },
+  { name: "icon-192.png", size: 192 },
+  { name: "icon-256.png", size: 256 },
+  { name: "icon-384.png", size: 384 },
+  { name: "icon-512.png", size: 512 },
+  { name: "apple-touch-icon-152.png", size: 152 },
+  { name: "apple-touch-icon-167.png", size: 167 },
+  { name: "apple-touch-icon.png", size: 180 },
 ];
 
-for (const t of targets) {
-  const svg = svgIcon(t.size, { padding: t.padding });
-  await sharp(Buffer.from(svg)).png().toFile(join(OUT_DIR, t.name));
-  console.log(`✓ ${t.name} (${t.size}x${t.size})`);
+const maskableTargets = [
+  { name: "icon-maskable-192.png", size: 192 },
+  { name: "icon-maskable-512.png", size: 512 },
+];
+
+const faviconTargets = [
+  { name: "favicon-16.png", size: 16 },
+  { name: "favicon-32.png", size: 32 },
+  { name: "favicon-48.png", size: 48 },
+];
+
+async function render(svg, targets) {
+  for (const t of targets) {
+    await sharp(svg).resize(t.size, t.size).png().toFile(join(ICONS_DIR, t.name));
+    console.log(`✓ ${t.name} (${t.size}x${t.size})`);
+  }
 }
 
-// Favicon (32x32)
-const favSvg = svgIcon(32, { padding: 0 });
-await sharp(Buffer.from(favSvg)).png().toFile(join(process.cwd(), "public", "favicon.png"));
-console.log("✓ favicon.png (32x32)");
+await render(masterSvg, masterTargets);
+await render(maskableSvg, maskableTargets);
+await render(faviconSvg, faviconTargets);
 
-console.log("\nDone. You can now remove sharp from devDependencies if desired.");
+console.log("\nDone. PNG icons regenerated from SVG masters.");

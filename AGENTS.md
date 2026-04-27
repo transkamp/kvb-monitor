@@ -172,7 +172,7 @@ App ist installierbar (manifest + Service Worker). Cache-Strategien in `public/s
 
 **Dev-Mode**: SW wird nur in `NODE_ENV=production` registriert (siehe `components/ServiceWorkerRegistration.tsx`) — verhindert HMR-Konflikte.
 
-**Icon-Generierung**: `node scripts/generate-icons.mjs` (nutzt `sharp` als devDependency). Quelle ist ein simples SVG-Monogramm; ersetze für echtes Branding.
+**Icon-Generierung**: `node scripts/generate-icons.mjs` rendert alle PNG-Größen aus den SVG-Mastern in `public/icons/` (`icon-master.svg`, `icon-maskable.svg`, `favicon.svg`). Quelle bearbeiten → Script laufen lassen → committed PNGs aktualisieren. Nutzt `sharp` als devDependency.
 
 ### Zeitzone — IMMER explizit
 
