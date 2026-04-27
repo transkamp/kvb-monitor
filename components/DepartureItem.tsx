@@ -60,7 +60,7 @@ const DepartureItem = forwardRef<HTMLButtonElement, DepartureItemProps>(
       .join(", ");
 
     const liClass = `
-      relative w-full flex flex-wrap items-center gap-4 py-4 border-b border-[var(--border)] last:border-b-0
+      relative w-full grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-4 py-4 border-b border-[var(--border)] last:border-b-0
       transition-colors
       ${
         isActive
@@ -74,7 +74,7 @@ const DepartureItem = forwardRef<HTMLButtonElement, DepartureItemProps>(
       <li className={liClass}>
         {/* Line badge */}
         <div
-          className={`flex-shrink-0 w-14 h-14 rounded-lg flex items-center justify-center font-bold text-lg text-white ${
+          className={`w-14 h-14 rounded-lg flex items-center justify-center font-bold text-lg text-white ${
             isCancelled ? "grayscale" : ""
           }`}
           style={{ backgroundColor: getLineColor(servingLine.number, servingLine.type) }}
@@ -84,7 +84,7 @@ const DepartureItem = forwardRef<HTMLButtonElement, DepartureItemProps>(
         </div>
 
         {/* Destination */}
-        <div className="flex-grow min-w-0" aria-hidden="true">
+        <div className="min-w-0" aria-hidden="true">
           <div
             className={`font-medium text-[var(--primary)] truncate flex items-center gap-2 ${
               isCancelled ? "line-through" : ""
@@ -119,11 +119,23 @@ const DepartureItem = forwardRef<HTMLButtonElement, DepartureItemProps>(
                 Gleis {departure.platform}
               </span>
             )}
+            {hints && hints.length > 0 && (
+              <button
+                type="button"
+                aria-label={`${hints.length} Hinweise anzeigen`}
+                aria-expanded={showHints}
+                onClick={() => setShowHints((v) => !v)}
+                className="relative z-10 inline-flex items-center justify-center w-6 h-6 rounded-full bg-[var(--surface-hover)] text-[var(--secondary)] hover:bg-[var(--accent)] hover:text-[var(--background)] transition-colors text-xs"
+                title="Hinweise"
+              >
+                <span aria-hidden="true">i</span>
+              </button>
+            )}
           </div>
         </div>
 
         {/* Time display */}
-        <div className="flex-shrink-0 text-right" aria-hidden="true">
+        <div className="text-right" aria-hidden="true">
           {isCancelled ? (
             <div className="text-lg font-bold text-[var(--warning)]">Entfällt</div>
           ) : timeInMinutes <= 1 ? (
@@ -163,26 +175,12 @@ const DepartureItem = forwardRef<HTMLButtonElement, DepartureItemProps>(
           <span className="sr-only">{a11yLabel}</span>
         </button>
 
-        {/* Hint button — sibling, raised above the primary overlay */}
-        {hints && hints.length > 0 && (
-          <button
-            type="button"
-            aria-label={`${hints.length} Hinweise anzeigen`}
-            aria-expanded={showHints}
-            onClick={() => setShowHints((v) => !v)}
-            className="relative z-10 flex-shrink-0 inline-flex items-center justify-center w-6 h-6 rounded-full bg-[var(--surface-hover)] text-[var(--secondary)] hover:bg-[var(--accent)] hover:text-[var(--background)] transition-colors text-xs"
-            title="Hinweise"
-          >
-            <span aria-hidden="true">i</span>
-          </button>
-        )}
-
         {/* Hint details (expandable) — sibling, raised above the primary overlay */}
         {showHints && hints && hints.length > 0 && (
           <div
             role="region"
             aria-label="Live-Hinweise"
-            className="relative z-10 basis-full mt-2 p-2 rounded bg-[var(--surface-muted)] border border-[var(--border)] text-xs text-[var(--primary)] space-y-1"
+            className="relative z-10 col-span-full mt-2 p-2 rounded bg-[var(--surface-muted)] border border-[var(--border)] text-xs text-[var(--primary)] space-y-1"
           >
             {hints.map((h, i) => (
               <div key={i} className="leading-snug">
