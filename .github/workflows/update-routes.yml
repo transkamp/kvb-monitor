@@ -29,7 +29,7 @@ jobs:
         run: npx tsx scripts/fetch-kvb-routes.ts
 
       - name: Commit changes
-        if: hashFile('lib/data/kvb-routes.json') != ''
+        if: hashFiles('lib/data/kvb-routes.json') != ''
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
