@@ -122,6 +122,7 @@ import { normalizeStopName, isKoelnStop, KOELN_ID_PREFIX } from "@/lib/utils/sto
 - `realtimeStatus` ist **Array, kein String**. Werte: `MONITORED`, `PREDICTED`, `EXTRA_TRIP`, `EXTRA_STOPS`, `TRIP_CANCELLED`, `STOP_CANCELLED`.
 - `isCancelled` allein ist unzuverlässig — immer mit `realtimeStatus.includes("TRIP_CANCELLED")` kombinieren.
 - `hints` enthält viel statisches Zeug (Type=`Timetable`: WLAN, Toiletten). **Nur** `RTIncidentCall`, `Stop`, `Line` durchlassen.
+- **Reihenfolge der Departures**: EFA liefert die `stopEvents` *nicht* zeitlich sortiert, sondern intern gruppiert (vermutlich nach Trip-ID/Linie). Eine verspätete Fahrt kann so weit oben stehen, obwohl pünktlichere Fahrten erst weiter unten kommen. Sortierung ist Job des Frontends — `HomeClient.tsx` sortiert `visibleDepartures` aufsteigend nach `realDateTime?.timestamp ?? dateTime.timestamp` (Ist- vor Soll-Zeit, Verspätung wirkt sich also auf die Position aus). Cancelled-Fahrten bleiben an ihrer zeitlichen Position; Einträge ohne validen Timestamp landen am Ende.
 
 ### JSX-Falsy-Falle
 
@@ -251,6 +252,7 @@ App ist installierbar (manifest + Service Worker). Cache-Strategien in `public/s
 | Trip-Modal `isPassed` ungenau | Heuristik mit `point.$ === "PATTERN_MAP"` — bekannt unscharf |
 | `ESTIMATED_MINUTES_PER_STOP = 2` hardcoded | Akzeptiert, nicht kritisch |
 | Vercel-Server in UTC → Abfahrten alle „sofort" | `lib/utils/berlinTime.ts` + `vercel.json` mit `TZ=Europe/Berlin` |
+| EFA-`stopEvents` kommen nach Trip-ID gruppiert, nicht nach Zeit → verspätete Fahrten erscheinen oben | Sort im Frontend (`HomeClient.tsx`) nach `realDateTime?.timestamp ?? dateTime.timestamp` |
 
 ---
 

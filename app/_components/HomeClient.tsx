@@ -39,13 +39,22 @@ export default function HomeClient({
   const { activeModes } = useTransportModeFilter();
 
   const visibleDepartures = useMemo(() => {
-    if (activeModes.length === 0) return departures;
     const knownModes = TRANSPORT_MODES as readonly string[];
-    return departures.filter((d) => {
-      const t = d.servingLine.type;
-      if (!knownModes.includes(t)) return true;
-      return activeModes.includes(t as TransportMode);
-    });
+    const filtered =
+      activeModes.length === 0
+        ? departures
+        : departures.filter((d) => {
+            const t = d.servingLine.type;
+            if (!knownModes.includes(t)) return true;
+            return activeModes.includes(t as TransportMode);
+          });
+
+    const effectiveTs = (d: Departure) => {
+      const ts = d.realDateTime?.timestamp ?? d.dateTime.timestamp;
+      return ts > 0 ? ts : Number.POSITIVE_INFINITY;
+    };
+
+    return [...filtered].sort((a, b) => effectiveTs(a) - effectiveTs(b));
   }, [departures, activeModes]);
 
   // Centralized stop setter with toast feedback + URL sync
