@@ -87,7 +87,12 @@ export default function TripDetailsModal({ departure, currentStopName, onClose, 
 
       try {
         const lineNumber = departure.servingLine.number;
-        const response = await fetch(`/api/route?line=${encodeURIComponent(lineNumber)}`);
+        const direction = departure.servingLine.direction || departure.servingLine.destination || "";
+        const response = await fetch(
+          `/api/route?line=${encodeURIComponent(lineNumber)}` +
+          `&direction=${encodeURIComponent(direction)}` +
+          `&currentStop=${encodeURIComponent(currentStopName)}`
+        );
         const data = await response.json();
 
         if (data.stops && data.stops.length > 0) {

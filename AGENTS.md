@@ -82,7 +82,7 @@ User → SearchBar → /api/stops          (EFA XML_STOPFINDER_REQUEST)
 | `GET /api/stops?q=…` | EFA STOPFINDER | `{ stops: Stop[] }` (max 20, Köln + KVB-bediente Nachbarorte via Whitelist aus `kvb-routes.json`, dedupe by normalized name) |
 | `GET /api/departures?stopId=…` oder `?name=…` | EFA DM | `{ departures: Departure[] }` |
 | `GET /api/trip?tripId=…` | EFA TRIP | `{ stops: TripStop[] }` |
-| `GET /api/route?lineId=…` | `lib/data/kvb-routes.json` | `{ stops: string[] }` |
+| `GET /api/route?line=…&direction=…&currentStop=…` | `lib/data/kvb-routes.json` | `{ line, stops: { id, name, shortName, ass, index }[], totalStops }` — `direction` (Headsign) und `currentStop` sind optional; ohne sie kommt das Array in Original-Reihenfolge zurück (siehe §7 „Routen-Orientierung pro Fahrtrichtung"). |
 
 Stop-IDs sind im EFA-Format `de:05315:NNNNN` (Köln-Municipality-Prefix). Alte KVB-ASS-IDs werden via `lib/storage.ts`-Migration (`kvb-favorites-migrated-v2`) einmalig gepurged.
 
@@ -123,6 +123,17 @@ import { normalizeStopName, isKoelnStop, KOELN_ID_PREFIX } from "@/lib/utils/sto
 - `isCancelled` allein ist unzuverlässig — immer mit `realtimeStatus.includes("TRIP_CANCELLED")` kombinieren.
 - `hints` enthält viel statisches Zeug (Type=`Timetable`: WLAN, Toiletten). **Nur** `RTIncidentCall`, `Stop`, `Line` durchlassen.
 - **Reihenfolge der Departures**: EFA liefert die `stopEvents` *nicht* zeitlich sortiert, sondern intern gruppiert (vermutlich nach Trip-ID/Linie). Eine verspätete Fahrt kann so weit oben stehen, obwohl pünktlichere Fahrten erst weiter unten kommen. Sortierung ist Job des Frontends — `HomeClient.tsx` sortiert `visibleDepartures` aufsteigend nach `realDateTime?.timestamp ?? dateTime.timestamp` (Ist- vor Soll-Zeit, Verspätung wirkt sich also auf die Position aus). Cancelled-Fahrten bleiben an ihrer zeitlichen Position; Einträge ohne validen Timestamp landen am Ende.
+
+### Routen-Orientierung pro Fahrtrichtung
+
+`lib/data/kvb-routes.json` speichert pro Linie nur **eine** Stopp-Reihenfolge (z.B. Linie 15: Ubierring → Chorweiler). `/api/route` orientiert das Array bei jedem Request anhand von `direction` (EFA-Headsign) und optional `currentStop`:
+
+1. Beide Indizes per `findStopIndex` lokalisieren (exakt-normalisiert, sonst Substring-Match in beide Richtungen — EFA liefert variierende Headsigns wie `"Benzelrath Frechen-Benzelrath"` für Stop `"Frechen-Benzelrath"`).
+2. Sind beide gefunden und unterschiedlich → spiegeln, sobald `direction` **vor** `currentStop` im Array liegt. Deckt auch Kurzläufer ab (z.B. Linie 7 Headsign `"Frechen Bf"` mitten auf der Strecke).
+3. Sonst Fallback: spiegeln, wenn das Headsign exakt zum **ersten** Stopp passt (und nicht zum letzten).
+4. `TripDetailsModal.tsx` schickt `direction` (= `servingLine.direction || servingLine.destination`) und `currentStopName` immer mit. Die Indizes/`isPassed`-Logik im Modal gilt **nach** der Spiegelung.
+
+**Out of scope**: Linienäste mit unterschiedlichen Stopp-Listen pro Variante (z.B. Linie 1 Bensberg vs. Refrath) — der Fetch-Script erfasst aktuell nur einen Linienverlauf. Wenn das relevant wird, Schema in `kvb-routes.json` auf `{ "<line>": { "<terminus>": [...] } }` umstellen und `/api/route` darauf erweitern.
 
 ### JSX-Falsy-Falle
 
@@ -253,6 +264,8 @@ App ist installierbar (manifest + Service Worker). Cache-Strategien in `public/s
 | `ESTIMATED_MINUTES_PER_STOP = 2` hardcoded | Akzeptiert, nicht kritisch |
 | Vercel-Server in UTC → Abfahrten alle „sofort" | `lib/utils/berlinTime.ts` + `vercel.json` mit `TZ=Europe/Berlin` |
 | EFA-`stopEvents` kommen nach Trip-ID gruppiert, nicht nach Zeit → verspätete Fahrten erscheinen oben | Sort im Frontend (`HomeClient.tsx`) nach `realDateTime?.timestamp ?? dateTime.timestamp` |
+| `kvb-routes.json` enthält jede Linie nur in einer Richtung → Trip-Modal zeigte Gegenrichtung rückwärts | `/api/route` orientiert pro Request anhand `direction` + `currentStop` (siehe §7 „Routen-Orientierung pro Fahrtrichtung") |
+| EFA-Headsigns variieren in der Schreibweise (`"Benzelrath Frechen-Benzelrath"` vs Stop `"Frechen-Benzelrath"`) | `findStopIndex` mit Substring-Fallback nach `normalizeStopName()` |
 
 ---
 
